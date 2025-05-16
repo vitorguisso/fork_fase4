@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="sensores" directorySegmentName="seg_0" id="EB7C38F2-82E2-AFC4-0F57-DB454228F160">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="local_sensor" id="51829A08-8036-19B3-2DFD-C1EAC55D0C1C">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="culturas_id_cultura" id="5ECB1158-C52F-1D9B-007C-FC626EA71C67">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_sensor" id="E95645A9-9517-FD96-5E52-7C050B25E9B1">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="name_sensor" id="F3DE3F3C-D032-4CC4-FFA2-C2C83DA3F0AF">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="sensores_culturas_fk" id="6C043C0C-5BBB-E175-0E47-D8C6ED9E0846">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="sensores_pk" id="B0A067E5-7623-AB65-043D-CF90F5049734">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="un_sensores_name" id="47460DC9-379B-6872-9D96-305CAA99FA49">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

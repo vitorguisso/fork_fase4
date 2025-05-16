@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="95000292-92AE-2B90-265F-A13BA9B5190C" name="leituras">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>7957F6F0-B445-7D9E-7ADA-68A6E6EF896D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_leitura" id="C0429237-F6F2-B87A-87C9-4D856982FF28">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>669128B8-5C80-748B-4649-A54CA3A2F46E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>2735BC3E-CC91-FDC6-1510-032B0E582A0B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_leitura" id="F3C08F4B-7DD4-97B1-3700-D687DD6564F8">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>56181269-A5F9-05BB-0DF4-A1A680A6A9BD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>401651CC-E197-9987-150E-5CE31E3644AD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sensores_id_sensor" id="219ECB77-DECF-B185-9C5B-499B27BB2C80">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>3D9396B5-9FEE-11BD-416E-792388BDA5DD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>2735BC3E-CC91-FDC6-1510-032B0E582A0B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A391FBD0-494F-29D9-26C1-1B0255759ED5" referredColumn="E95645A9-9517-FD96-5E52-7C050B25E9B1"/>
+</associations>
+</Column>
+<Column name="valor_lido" id="F0AFE396-21C8-72F3-1648-FD80EB6F8BE0">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>DBA56F17-E4C1-8275-B4C0-F589C419B310</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>4AFF5638-5431-1DB2-F457-12FE4D9D5E8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E654CB8-FE93-C3EC-54E7-019CEE6EC535" name="leituras_pk">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>B55AEADA-F946-BBEF-A592-49D5104D202B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0429237-F6F2-B87A-87C9-4D856982FF28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2780616C-0EF1-FF56-2B36-B77169682EDB" name="leituras_sensores_fk">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="219ECB77-DECF-B185-9C5B-499B27BB2C80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

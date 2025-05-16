@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A42AA464-ED76-3DC3-2C17-E412863485AE" name="culturas">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>5188FCFF-EB00-2610-C9B9-2E12F346649C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cultura" id="A7BA6C6F-AD2E-CD5D-C33B-F1257B47A771">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>72A0ADDF-F957-FE8B-EC1A-E60303748F91</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>2735BC3E-CC91-FDC6-1510-032B0E582A0B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name_cultura" id="4B9B8D26-2A53-FFCC-8915-46C82BE452E5">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>5F71E011-3938-B6D0-8073-6F7D75BD06C9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C8571670-6B5C-9432-C7A9-BA21E1C6369D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fazendas_id_fazenda" id="EFD03F0E-B1A5-3AFF-8CC4-C81A0AF79F9F">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>FFB73979-9757-C711-22F8-5737B2D6A457</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>2735BC3E-CC91-FDC6-1510-032B0E582A0B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1721F5C8-EA9F-5519-2B20-22BA2E007712" referredColumn="46D1457F-B182-0C60-DA7E-7D90D3712D2F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1565606-5C35-AB14-8BA7-7C9911EADE2C" name="cultura_pk">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>487C79AF-04AE-B8D9-2607-E2746763A171</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7BA6C6F-AD2E-CD5D-C33B-F1257B47A771"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F299FC64-67D8-1F6E-030D-F02B3CAD7C21" name="un_culturas_name_">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>AFA19B04-4FE3-00FC-F127-465A41FDC67B</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B9B8D26-2A53-FFCC-8915-46C82BE452E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88731D08-2131-8B25-BD53-3F8E3C62EB28" name="culturas_fazendas_fk">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFD03F0E-B1A5-3AFF-8CC4-C81A0AF79F9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="fazendas" directorySegmentName="seg_0" id="CCEFA090-258C-3422-7FC1-11920322206C">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="name_fazenda" id="25082897-32C2-58D4-BB8C-75BAFFDA1743">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_fazenda" id="46D1457F-B182-0C60-DA7E-7D90D3712D2F">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="fazendas_pk" id="EA34CDD4-A83E-14A2-BF48-CC8BA5C7E920">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="un_fazendas_name" id="E007F913-3217-F6B9-5AA4-D5D9E9506284">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="SCRIPT_DDL_FARMTECHSOLUITIONS" id="4AD64A70-EBD4-9680-ADEB-E4A163BAB8BB" mainViewID="E630B855-0E0C-298E-7FCD-4D8F471C9A3C">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:06:22 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</fileName>
+<pathName>/home/outtech/Documentos/Pessoal/FIAP/FASE 2/trabalhosfiap - rm564940/CAP 1 - RM564940/scripts</pathName>
+<dbType>9</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

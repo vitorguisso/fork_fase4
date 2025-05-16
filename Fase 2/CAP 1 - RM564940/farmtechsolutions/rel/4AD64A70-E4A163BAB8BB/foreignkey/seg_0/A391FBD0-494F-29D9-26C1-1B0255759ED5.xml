@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A391FBD0-494F-29D9-26C1-1B0255759ED5" containerWithKeyObject="95000292-92AE-2B90-265F-A13BA9B5190C" localFKIndex="2780616C-0EF1-FF56-2B36-B77169682EDB" name="leituras_sensores_fk">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>AD0EAAD6-15A1-99DA-41FA-8E4FF10C5F60</importedID>
+<referredTableLongName>sensores</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EB7C38F2-82E2-AFC4-0F57-DB454228F160</referredTableID>
+<keyObject>B0A067E5-7623-AB65-043D-CF90F5049734</keyObject>
+<referredKeyID>B0A067E5-7623-AB65-043D-CF90F5049734</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_sensor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

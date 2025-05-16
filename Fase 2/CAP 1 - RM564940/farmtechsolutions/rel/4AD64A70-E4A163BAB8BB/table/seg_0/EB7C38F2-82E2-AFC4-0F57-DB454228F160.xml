@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB7C38F2-82E2-AFC4-0F57-DB454228F160" name="sensores">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>8EBA615E-5094-19C6-4350-AF55C660DA56</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sensor" id="E95645A9-9517-FD96-5E52-7C050B25E9B1">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>550F5A98-74E6-E142-04AF-274C9B97FA7F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>2735BC3E-CC91-FDC6-1510-032B0E582A0B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name_sensor" id="F3DE3F3C-D032-4CC4-FFA2-C2C83DA3F0AF">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>E0FD4576-852E-E951-7DEF-E3E737926FE6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C8571670-6B5C-9432-C7A9-BA21E1C6369D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="local_sensor" id="51829A08-8036-19B3-2DFD-C1EAC55D0C1C">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>55DDDC77-1B82-9AB0-0239-EB64494EA206</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C8571670-6B5C-9432-C7A9-BA21E1C6369D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="culturas_id_cultura" id="5ECB1158-C52F-1D9B-007C-FC626EA71C67">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>1AD6445C-7052-BB11-F759-34CC36C6175B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>2735BC3E-CC91-FDC6-1510-032B0E582A0B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="012B6B1A-2507-972C-5233-6E3FF54B6128" referredColumn="A7BA6C6F-AD2E-CD5D-C33B-F1257B47A771"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0A067E5-7623-AB65-043D-CF90F5049734" name="sensores_pk">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>FF3A2DCF-A6C7-1675-E01F-8C6763BF5BAE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E95645A9-9517-FD96-5E52-7C050B25E9B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47460DC9-379B-6872-9D96-305CAA99FA49" name="un_sensores_name">
+<sourceDDLFile>SCRIPT_DDL_FARMTECHSOLUITIONS.SQL</sourceDDLFile>
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<importedID>821CBCA8-A899-2A9E-B4FD-A7D7943B3CCE</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3DE3F3C-D032-4CC4-FFA2-C2C83DA3F0AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C043C0C-5BBB-E175-0E47-D8C6ED9E0846" name="sensores_culturas_fk">
+<createdBy>outtech</createdBy>
+<createdTime>2025-04-23 02:09:06 UTC</createdTime>
+<ownerDesignName>farmtechsolutions</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5ECB1158-C52F-1D9B-007C-FC626EA71C67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
