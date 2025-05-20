@@ -207,7 +207,7 @@ CREATE TABLE sistema_irrigacao (
 *
 ## 📜 Visualização dos dados armazenados na tabela Oracle após algumas manipulações via python:
 
-![Dados](workinspace/Fase 3/Cap 1 - Construindo uma máquina agrícola)/assets/dados.png
+![Dados](../assets/dados.png)
 
 *Print do comando SELECT * FROM sistema_irrigacao no Oracle SQL Developer, exibindo os dados armazenados pela integração com o Python.*
 
