@@ -31,7 +31,8 @@
 1 Cultura tem vários sensores = Cultura 1:N
 1 Sensor tem várias leituras = Sensor 1:N
 *
-![MER](assets/DER.png)
+
+![MER](../assets/DER.png)
 
 
 # 📦 CRUD do Sistema de Irrigação
