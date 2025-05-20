@@ -1,0 +1,81 @@
+#include "DHT.h"
+
+// DEFINIÇÃO DOS PINOS
+#define DHTPIN 14            // Pino do sensor DHT22 (umidade)
+#define DHTTYPE DHT22 
+#define LDRPIN 34           // Pino do sensor LDR (simula pH)
+#define FOSFORO_PIN 12      // Botão para fósforo
+#define POTASSIO_PIN 13    // Botão para potássio
+#define LED_BOMBA 27      // LED representa a bomba de irrigação
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+
+// Configura os modos dos pinos
+  pinMode(LDRPIN, INPUT);
+  pinMode(FOSFORO_PIN, INPUT_PULLUP);
+  pinMode(POTASSIO_PIN, INPUT_PULLUP);
+  pinMode(LED_BOMBA, OUTPUT);
+
+  digitalWrite(LED_BOMBA, LOW);
+}
+
+void loop() {
+  // Leitura da umidade
+  float umidade = dht.readHumidity();
+
+  // Leitura dos botões: pressionado = presença, solto = ausência
+  bool fosforoPresente = digitalRead(FOSFORO_PIN) == LOW;
+  bool potassioPresente = digitalRead(POTASSIO_PIN) == LOW;
+
+  // Leitura do LDR para simular pH
+  int ldrValor = analogRead(LDRPIN);
+  float ph = map(ldrValor, 0, 4095, 0, 140) / 10.0;
+  ph = constrain(ph, 0.0, 14.0);
+
+  // Lógica da bomba (somente umidade)
+  bool bombaLigada = (umidade < 40.0);
+
+  digitalWrite(LED_BOMBA, bombaLigada ? HIGH : LOW);
+
+  // Exibir leituras no Serial
+  Serial.print("Umidade: ");
+  Serial.print(umidade);
+  Serial.print(" % | pH: ");
+  Serial.print(ph);
+  Serial.print(" | Fósforo: ");
+  Serial.print(fosforoPresente ? "Presente" : "Ausente");
+  Serial.print(" | Potássio: ");
+  Serial.print(potassioPresente ? "Presente" : "Ausente");
+  Serial.print(" | Bomba: ");
+  Serial.println(bombaLigada ? "LIGADA" : "DESLIGADA");
+
+  // Análise de necessidade dos insumos:
+  if (!fosforoPresente) {
+    Serial.println("→ ATENÇÃO: Necessário corrigir Fósforo no solo.");
+  } else {
+    Serial.println("→ Fósforo OK.");
+  }
+
+  if (!potassioPresente) {
+    Serial.println("→ ATENÇÃO: Necessário corrigir Potássio no solo.");
+  } else {
+    Serial.println("→ Potássio OK.");
+  }
+
+  if (ph < 5.5) {
+    Serial.println("→ ATENÇÃO: pH muito ácido! Necessário corrigir.");
+  } else if (ph > 7.5) {
+    Serial.println("→ ATENÇÃO: pH muito alcalino! Necessário corrigir.");
+  } else {
+    Serial.println("→ pH dentro da faixa ideal.");
+  }
+
+  Serial.println("-----------------------------");
+
+  delay(2000);
+}
+
