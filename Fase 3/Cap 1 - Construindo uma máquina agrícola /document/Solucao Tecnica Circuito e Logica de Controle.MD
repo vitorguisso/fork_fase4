@@ -211,9 +211,9 @@ CREATE TABLE sistema_irrigacao (
 *Print do comando SELECT * FROM sistema_irrigacao no Oracle SQL Developer, exibindo os dados armazenados pela integração com o Python.*
 
 ## 📜 Vídeos explicativos
-Acesse o link do vídeo explicativo do projeto pt1 [Wokwi](https://youtu.be/U5qKTlOQY6w).
-Acesse o link do vídeo explicativo do projeto pt2 [Wokwi](https://youtu.be/BLC7gruKot8).
-Acesse o link do vídeo explicativo do projeto pt3 [Wokwi](https://youtu.be/cwMhXKpyLPk).
+Acesse o link do vídeo explicativo do projeto pt1 [Vídeo pt1](https://youtu.be/U5qKTlOQY6w).
+Acesse o link do vídeo explicativo do projeto pt2 [Vídeo pt2](https://youtu.be/BLC7gruKot8).
+Acesse o link do vídeo explicativo do projeto pt3 [Vídeo pt3](https://youtu.be/mARjEbhqHjk).
 
 ## 📜 Conclusão
 *
