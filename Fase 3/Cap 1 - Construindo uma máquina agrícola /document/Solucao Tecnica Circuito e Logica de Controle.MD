@@ -35,7 +35,7 @@ Além disso, os dados são integrados a um banco de dados Oracle, permitindo o g
 
 ## 📜 Circuíto no Wokwi
 
-![Circuito Wokwi](workinspace/Fase 3/Cap 1 - Construindo uma máquina agrícola)/assets/circuito limpo.PNG
+![Circuito Wokwi](../assets/circuito%20limpo.PNG)
 
 Acesse o link de compartilhamento do projeto no [Wokwi](https://wokwi.com/projects/431425340498998273).
 
