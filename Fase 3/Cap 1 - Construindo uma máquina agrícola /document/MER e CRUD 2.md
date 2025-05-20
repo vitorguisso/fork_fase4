@@ -32,7 +32,7 @@
 1 Sensor tem várias leituras = Sensor 1:N
 *
 
-![MER](workinspace/Fase%203/Cap%201%20-%20Construindo%20uma%20m%C3%A1quina%20agr%C3%ADcola/assets/DER.png)
+![MER](workinspace/Fase_3/Cap_1/assets/DER.png)
 
 # 📦 CRUD do Sistema de Irrigação
 
