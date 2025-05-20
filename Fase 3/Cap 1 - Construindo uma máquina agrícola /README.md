@@ -32,13 +32,14 @@ Além disso, os dados são integrados a um banco de dados Oracle, permitindo o g
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>assets</b>: aqui estão os arquivos de imagens do Circuíto, os Dados e o DER.
 
-- <b>document</b>: Aqui estão a documentação Solucao Tecnica Circuito e Logica de Controle que servem como orientação e diretrizes do projeto e o MER E CRUD explicados conforme solicitado na atividade.
+- [**assets**](./assets): Aqui estão os arquivos de imagens do Circuíto, os Dados e o DER.
 
-- <b>scripts</b>: Aqui enconra se o arquivo .SQO da tabela de Irrigação.
+- [**document**](./document): Aqui estão a documentação Solucao Tecnica Circuito e Logica de Controle que servem como orientação e diretrizes do projeto e o MER E CRUD explicados conforme solicitado na atividade.
 
-- <b>src</b>: Aqui estão localizados os arquivos  executavel.py e o arquivo do código do Wokwi no txt originais.
+- [**scripts**](./scripts): Aqui enconra se o arquivo .SQO da tabela de Irrigação.
+
+- [**src**](./src): Aqui estão localizados os arquivos  executavel.py e o arquivo do código do Wokwi no txt originais.
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
