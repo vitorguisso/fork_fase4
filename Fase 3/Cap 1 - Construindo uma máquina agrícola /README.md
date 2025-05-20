@@ -6,16 +6,14 @@
 
 <br>
 
-# Nome do projeto
+# Bio Machine
 
-## Nome do grupo
+## Machine FIAP
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/company/inova-fusca">Vinícius Pereira Santana 1</a>
 - <a href="https://www.linkedin.com/company/inova-fusca">Vitor Augusto Prado Guisso 2</a>
 - <a href="https://www.linkedin.com/company/inova-fusca">Ryan Carlos Sousa Alves da Cunha 3</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Thyago Batista de Amorim de Paiva 4</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
@@ -26,37 +24,49 @@
 
 ## 📜 Descrição
 
-*O presente projeto tem como objetivotratar o lead time e informar regras de reabastecimento para o controle de insumos do setor de Agronegócio*
+*O objetivo deste projeto é simular um sistema de irrigação e monitoramento por sensores que medem a umidade do solo, pH, presença de fósforo e potássio. Com base nessas medições, o sistema decide automaticamente se deve acionar a bomba de água. Além disso, informa o usuário sobre a presença ou ausência dos nutrientes fósforo e potássio, e se o solo está ácido, ideal ou alcalino.
+Além disso, os dados são integrados a um banco de dados Oracle, permitindo o gerenciamento completo via Python.*
 
 
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
+- <b>assets</b>: aqui estão os arquivos de imagens do Circuíto, os Dados e o DER.
 
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
+- <b>document</b>: Aqui estão a documentação Solucao Tecnica Circuito e Logica de Controle que servem como orientação e diretrizes do projeto e o MER E CRUD explicados conforme solicitado na atividade.
 
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
+- <b>scripts</b>: Aqui enconra se o arquivo .SQO da tabela de Irrigação.
 
-- <b>document</b>: Aqui estão a documentação técnica e proposta de solução que servem como orientação de execução técnica e diretrizes do projeto atividades poderão pedir.
-
-- <b>scripts</b>: aqui estão arquivos de backup .py, json e SQL.
-
-- <b>src</b>: Aqui estão localizados os arquivos contendo  o arquivo executavel.py e estoque json originais.
+- <b>src</b>: Aqui estão localizados os arquivos  executavel.py e o arquivo do código do Wokwi no txt originais.
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
 ## 🔧 Como executar o código
 
-*Nesse projeto foram utilizados Oracle SQL Developer, Biblioteca Python cx_Oracle, Oracle Instant Client, Visual Studio.*
+*
+- Python 3.x instalado
+- Pacotes:
+  - cx_Oracle
+  - pandas
+- Oracle Instant Client 64-bit (instalado e configurado no Path)
+- Conta ativa Oracle FIAP (banco de dados remoto)*
+
+## 🔧 CONEXÃO COM O BANCO ORACLE
+*
+⚠️ Importante: Este projeto está configurado com os dados do aluno RM562317.
+Se outro usuário for testar, é necessário alterar as credenciais no código.
+
+Substitua por seus dados:
+username = "SEU_USUARIO"  # Ex: RM123456
+password = "SUA_SENHA"
+dsn = "oracle.fiap.com.br/orcl"
+*
 
 
 ## 🗃 Histórico de lançamentos
 
-* 0.2.0 - 22/04/2025
-    * 
-* 0.1.0 - 21/04/2025
+* 0.1.0 - 20/05/2025
     *
 
 ## 📋 Licença
