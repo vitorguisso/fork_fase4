@@ -6,16 +6,14 @@
 
 <br>
 
-# Nome do projeto
+# Bio Machine
 
-## Nome do grupo
+## Machine FIAP
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/company/inova-fusca">Vinícius Pereira Santana 1</a>
 - <a href="https://www.linkedin.com/company/inova-fusca">Vitor Augusto Prado Guisso 2</a>
 - <a href="https://www.linkedin.com/company/inova-fusca">Ryan Carlos Sousa Alves da Cunha 3</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Thyago Batista de Amorim de Paiva 4</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
@@ -24,22 +22,54 @@
 - <a href="https://www.linkedin.com/company/inova-fusca">Andre Godoi Chiovato</a>
 
 
-## 📜 Descrição
+## 📜 Introdução
 
-*O presente projeto tem como objetivotratar o lead time e informar regras de reabastecimento para o controle de insumos do setor de Agronegócio*
+*O presente projeto tem como objetivo elaborar a primeira máquina agrícula capaz de medir parâmetros através da simulação de sensores Fósforo, Potássio, PH e umidade do solo. Porém nesse documento abordaremos aspectos das operações CRUD e o relacionamento do MER realizados.*
 
+## 📜 Objetivo
+
+*O objetivo deste projeto é simular um sistema de irrigação e monitoramento por sensores que medem a umidade do solo, pH, presença de fósforo e potássio. Com base nessas medições, o sistema decide automaticamente se deve acionar a bomba de água. Além disso, informa o usuário sobre a presença ou ausência dos nutrientes fósforo e potássio, e se o solo está ácido, ideal ou alcalino.
+Além disso, os dados são integrados a um banco de dados Oracle, permitindo o gerenciamento completo via Python.*
+
+
+## 📜 MER
+*Porém nesse documento abordaremos aspectos das operações CRUD e o relacionamento do MER realizados.*
+
+
+*Para a criação do banco utilizamos a seguinte lógica
+1 Fazenda tem várias culturas = Fazenda 1:N
+1 Cultura tem vários sensores = Cultura 1:N
+1 Sensor tem várias leituras = Sensor 1:N
+*
+
+![MER](workinspace/Fase 3/Cap 1 - Construindo uma máquina agrícola)/assets/DER.png
+
+
+## 📜 Circuíto no Wokwi
+
+![Circuito Wokwi](workinspace/Fase 3/Cap 1 - Construindo uma máquina agrícola)/assets/circuito limpo.PNG
+
+Acesse o link de compartilhamento do projeto no [Wokwi](https://wokwi.com/projects/431425340498998273).
+
+## 📜 Componentes do Wokwi
+
+*Microcontrolador ESP32
+Sensor DHT22: simula a umidade do solo
+Sensor LDR: simula o pH do solo por variação de luminosidade
+Botão 1: simula a presença/ausência de fósforo
+Botão 2: simula a presença/ausência de potássio
+LED: simula a bomba de irrigação (ligada/desligada)
+*
 
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
-
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
+- <b>assets</b>: Aqui estão os arquivos relacionados as imagens, do circuíto, DER e logotipo da FIAP presentes no projeto.
 
 - <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
 
-- <b>document</b>: Aqui estão a documentação técnica e proposta de solução que servem como orientação de execução técnica e diretrizes do projeto atividades poderão pedir.
+- <b>document</b>: Aqui encontra se disponívelr.
 
 - <b>scripts</b>: aqui estão arquivos de backup .py, json e SQL.
 
@@ -54,10 +84,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🗃 Histórico de lançamentos
 
-* 0.2.0 - 22/04/2025
-    * 
-* 0.1.0 - 21/04/2025
-    *
+* 0.1.0 - 19/05/2025*
 
 ## 📋 Licença
 
