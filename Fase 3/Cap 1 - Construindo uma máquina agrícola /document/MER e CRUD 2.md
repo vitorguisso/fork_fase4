@@ -32,7 +32,7 @@
 1 Sensor tem várias leituras = Sensor 1:N
 *
 
-![MER](workinspace/Fase 3/Cap 1 - Construindo uma máquina agrícola)/assets/DER.png
+![MER]("workinspace/Fase 3/Cap 1 - Construindo uma máquina agrícola/assets/DER.png")
 
 # 📦 CRUD do Sistema de Irrigação
 
