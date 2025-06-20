@@ -35,7 +35,7 @@ Na Fase 4 aprimoramos:
 
 ## 📜 Circuito Wokwi
 
-**Lógica de Funcionamneto:** 
+**Lógica de Funcionameto:** 
   A umidade é lida pelo DHT22. Caso o valor da umidade seja menor que 40%, então a bomba de irrigação (Led) é acionada automaticamente até que a umidade volte a ser maior ou igual a 40%.
 O sensor de PH é simulado pelo LDH. O valor lido é convertido para a escala de pH entre 0 e 14. Foi considerado um pH ácido valores abaixo de 5,5 e pH alcalino valores acima de 7,5. 
 Os Sensores de fósforo e potássio foram representados por botões. Caso o botão esteja pressionado então o nutriente é considerado presente. 
@@ -230,5 +230,6 @@ A segunda parte do projeto envolveu a integração com Python e Oracle, onde os 
 ## 📹 Vídeo Demonstrativo
 
 Assista ao vídeo de demonstração do projeto no YouTube:  
-[▶️ Vídeo do Projeto](https://www.youtube.com/watch?v=hbWBFAC73Io)
+[▶️ Vídeo do Projeto](https://youtu.be/hbWBFAC73Io)
+
 
