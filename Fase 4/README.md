@@ -13,7 +13,6 @@
 ## 👨‍🎓 Integrantes:
 - [Vinícius Pereira Santana](https://www.linkedin.com/company/inova-fusca)
 - [Vitor Augusto Prado Guisso](https://www.linkedin.com/company/inova-fusca)
-- [Ryan Carlos Sousa Alves da Cunha](https://www.linkedin.com/company/inova-fusca)
 
 ## 👩‍🏫 Professores:
 ### Tutor(a)
