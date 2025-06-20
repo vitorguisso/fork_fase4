@@ -38,18 +38,34 @@ Na Fase 4 aprimoramos:
 - **LCD I2C** para exibir dados
 - Conexões otimizadas (SDA, SCL)
 
-![Circuito Wokwi](../assets/circuito%20limpo.PNG)
+![Circuito Wokwi](../assets/circuito.PNG)
 
 ---
 
 ## 📜 Funcionamento
 
-- Se a **umidade < 40%**, o relé liga a bomba.
+- Se a **umidade menor ou igual a 40%**, a bomba representada pelo relé é acionada até a umidade ficar maior que 40%.
 - A predição do modelo complementa essa decisão.
-- O LCD exibe: Umidade, pH, Fósforo, Potássio, Status da bomba.
-- O Serial Plotter mostra a curva de umidade em tempo real.
+- O display LCD mostra **Umidade (%)** e **Status da Bomba** diretamente no circuito.
+- As demais informações (**pH, Fósforo, Potássio**) são exibidas no **Monitor Serial** com mensagens de orientação.
+- O Serial Plotter mostra a curva de umidade em tempo real
 
 ---
+
+## 🖥️ Monitor Serial
+
+Abaixo, um exemplo da exibição das leituras no **Monitor Serial**, com mensagens de alerta para pH, fósforo e potássio:
+
+![Monitor Serial](./assets/visor.png)
+
+---
+
+## 📈 Serial Plotter
+
+O **Serial Plotter** mostra a curva de variação da umidade em tempo real, ajudando a visualizar o acionamento da bomba:
+
+![Gráfico de Umidade](./assets/grafico_pHxumidade.png)
+
 
 ## 📜 Código ESP32
 
