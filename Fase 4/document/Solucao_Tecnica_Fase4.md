@@ -93,6 +93,108 @@ O **Serial Plotter** mostra a curva de variação da umidade em tempo real, ajud
 
 ---
 
+## ⚙️ Código ESP32
+
+Abaixo está o código completo utilizado no ESP32 para simular o sistema de irrigação automatizado:
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+#include "DHT.h"
+
+#define DHTPIN 14
+#define DHTTYPE DHT22 
+#define LDRPIN 34
+#define FOSFORO_PIN 12
+#define POTASSIO_PIN 13
+#define LED_BOMBA 27  // LED indicador do estado da bomba
+#define RELE_BOMBA 2  // Pino IN do módulo relé
+
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+  Wire.begin(23, 22);
+  lcd.init();
+  lcd.backlight();
+
+  pinMode(LDRPIN, INPUT);
+  pinMode(FOSFORO_PIN, INPUT_PULLUP);
+  pinMode(POTASSIO_PIN, INPUT_PULLUP);
+
+  pinMode(LED_BOMBA, OUTPUT);
+  digitalWrite(LED_BOMBA, LOW);
+
+  pinMode(RELE_BOMBA, OUTPUT);
+  digitalWrite(RELE_BOMBA, LOW);  // Relé começa desligado
+}
+
+void loop() {
+  float umidade = dht.readHumidity();
+  bool fosforoPresente = digitalRead(FOSFORO_PIN) == LOW;
+  bool potassioPresente = digitalRead(POTASSIO_PIN) == LOW;
+  int ldrValor = analogRead(LDRPIN);
+  float ph = map(ldrValor, 0, 4095, 0, 140) / 10.0;
+  ph = constrain(ph, 0.0, 14.0);
+
+  bool bombaLigada = (umidade < 40.0);
+
+  // Aciona o RELÉ (bomba real)
+  digitalWrite(RELE_BOMBA, bombaLigada ? HIGH : LOW);
+
+  // Aciona o LED indicador
+  digitalWrite(LED_BOMBA, bombaLigada ? HIGH : LOW);
+
+  // === DEBUG COMPLETO PARA MONITOR SERIAL ===
+  Serial.print("Umidade: ");
+  Serial.print(umidade);
+  Serial.print(" % | pH: ");
+  Serial.print(ph);
+  Serial.print(" | Fósforo: ");
+  Serial.print(fosforoPresente ? "Presente" : "Ausente");
+  Serial.print(" | Potássio: ");
+  Serial.print(potassioPresente ? "Presente" : "Ausente");
+  Serial.print(" | Bomba: ");
+  Serial.println(bombaLigada ? "LIGADA" : "DESLIGADA");
+
+  if (!fosforoPresente) {
+    Serial.println("ATENÇÃO: Necessário corrigir Fósforo no solo.");
+  } else {
+    Serial.println("Fósforo OK.");
+  }
+
+  if (!potassioPresente) {
+    Serial.println("ATENÇÃO: Necessário corrigir Potássio no solo.");
+  } else {
+    Serial.println("Potássio OK.");
+  }
+
+  if (ph < 5.5) {
+    Serial.println("ATENÇÃO: pH muito ácido! Necessário corrigir.");
+  } else if (ph > 7.5) {
+    Serial.println("ATENÇÃO: pH muito alcalino! Necessário corrigir.");
+  } else {
+    Serial.println("pH dentro da faixa ideal.");
+  }
+
+  Serial.println("-----------------------------");
+
+  // === LCD ===
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Umidade: ");
+  lcd.print(umidade, 1);
+
+  lcd.setCursor(0, 1);
+  lcd.print("Bomba: ");
+  lcd.print(bombaLigada ? "ON " : "OFF");
+
+  // Delay ajustado para leitura mais lenta e clara
+  delay(2000);
+}
+
+
 ## 📜 Streamlit + Scikit-learn
 
 - Dashboard com:
