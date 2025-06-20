@@ -9,10 +9,9 @@
 ## FarmTech Solutions — Fase 4
 
 ### 👨‍🎓 Integrantes
-- Vinícius Pereira Santana 1
-- Vitor Augusto Prado Guisso 2
-- Ryan Carlos Sousa Alves da Cunha 3
-
+- Vinícius Pereira Santana 
+- Vitor Augusto Prado Guisso
+  
 ### 👩‍🏫 Professores
 - **Tutor:** Lucas Gomes Moreira
 - **Coordenador:** Andre Godoi Chiovato
