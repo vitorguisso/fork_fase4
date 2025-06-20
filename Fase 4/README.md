@@ -75,11 +75,11 @@ O sistema coleta dados em tempo real, decide quando irrigar, armazena no banco d
 
 
 ## 🔧 CONEXÃO COM O BANCO ORACLE
-CRUD completo: CREATE, INSERT, UPDATE, DELETE, SELECT
-Scripts no diretório scripts/
-Conexão via cx_Oracle.
+- CRUD completo: CREATE, INSERT, UPDATE, DELETE, SELECT
+- Scripts no diretório scripts/
+- Conexão via cx_Oracle.
 
-⚠️ Importante: Este projeto está configurado com os dados do aluno RM562317.
+**⚠️ Importante:** Este projeto está configurado com os dados do aluno RM562317.
 Se outro usuário for testar, é necessário alterar as credenciais no código.
 
 Substitua por seus dados:
@@ -88,9 +88,8 @@ password = "SUA_SENHA"
 dsn = "oracle.fiap.com.br/orcl"
 
 ## 📜 Streamlit + Scikit-learn
-Dashboard com tabela, gráfico histórico de umidade e predição online.
-
-Pipeline salvo em pickle.
+- Dashboard com tabela, gráfico histórico de umidade e predição online.
+- Pipeline salvo em pickle.
 
 ✅ Executar Dashboard Streamlit
 streamlit run src/app.py
