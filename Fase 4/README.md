@@ -38,20 +38,26 @@ O sistema coleta dados em tempo real, decide quando irrigar, armazena no banco d
 
 ## 📁 Estrutura de Pastas
 
-- [**assets**](./assets): imagens do circuito Wokwi, prints do Serial Plotter, DER.
-- [**document**](./document): Solução Técnica, Circuito e Lógica de Controle, modelo de banco de dados (MER/DER) e CRUD.
-- [**scripts**](./scripts): arquivo `.sql` para criação e estrutura da tabela de irrigação.
-- [**src**](./src):
-  - `app.py`: Código Python com **Scikit-learn** e **Streamlit**
-  - `codigo_ESP32.ino`: Código otimizado do ESP32 para o Wokwi (com Display LCD, Relay, sensores e Serial Plotter)
-- **README.md**: este arquivo de guia geral.
+## 📂 **Estrutura do Repositório**
+
+| Pasta/Arquivo                | Descrição |
+| ---------------------------  | --------- |
+| **assets/**                  | Imagens do circuito, gráficos, logo, prints |
+| **document/**                | Documentos técnicos: MER, CRUD, Solução Técnica |
+| **scripts/**                 | Scripts SQL para criação da tabela `sistema_irrigacao` |
+| **src/**                     | Códigos executáveis: `app.py` (Streamlit + Scikit-learn), `sistema_irrigacao.py` (CRUD com Oracle),C++ |
+| **README.md**                | Este arquivo com instruções gerais |
 
 ---
+## 🔗 **Links**
 
-## 🔧 Como executar tudo (passo a passo)
+- [🌐 Acesse o Circuito Wokwi](https://wokwi.com/projects/434291929867724801)
+- [▶️ Assista ao Vídeo no YouTube](https://youtu.be/hbWBFAC73Io)
+
+## 🔧 Como executar
 
 ### 📌 **1) Simulador Wokwi**
-- Abra o arquivo `codigo_ESP32.ino` no [Wokwi](https://wokwi.com/).
+- [🌐 Acesse o Circuito Wokwi](https://wokwi.com/projects/434291929867724801)
 - Rode o circuito para visualizar:
   - Sensores simulados
   - Relay simulando a bomba
@@ -66,7 +72,11 @@ O sistema coleta dados em tempo real, decide quando irrigar, armazena no banco d
     - `pandas`
     - `scikit-learn`
     - `streamlit`
-
+  - Oracle Instant Client 64-bit
+     Baixe e configure no PATH.
+    
 - **Instalar dependências:**
   ```bash
   pip install cx_Oracle pandas scikit-learn streamlit
+
+ATENÇÃO: No código está configurado com:
