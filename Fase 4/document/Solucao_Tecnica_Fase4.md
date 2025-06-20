@@ -230,5 +230,5 @@ A segunda parte do projeto envolveu a integração com Python e Oracle, onde os 
 ## 📹 Vídeo Demonstrativo
 
 Assista ao vídeo de demonstração do projeto no YouTube:  
-[▶️ Vídeo do Projeto](https://https://youtu.be/hbWBFAC73Io)
+[▶️ Vídeo do Projeto](https://www.youtube.com/watch?v=hbWBFAC73Io)
 
