@@ -56,7 +56,7 @@ Na Fase 4 aprimoramos:
 
 Abaixo, um exemplo da exibição das leituras no **Monitor Serial**, com mensagens de alerta para pH, fósforo e potássio:
 
-![Monitor Serial](./assets/visor.png)
+![Monitor Serial](./assets/visor.PNG)
 
 ---
 
