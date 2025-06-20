@@ -9,9 +9,8 @@
 ## FarmTech Solutions — Fase 4
 
 ### 👨‍🎓 Integrantes
-- Vinícius Pereira Santana 1
-- Vitor Augusto Prado Guisso 2
-- Ryan Carlos Sousa Alves da Cunha 3
+- Vinícius Pereira Santana 
+- Vitor Augusto Prado Guisso 
 
 ### 👩‍🏫 Professores
 - **Tutor:** Lucas Gomes Moreira
@@ -94,8 +93,7 @@ O **Serial Plotter** mostra a curva de variação da umidade em tempo real, ajud
 ---
 
 ## ⚙️ Código ESP32
-
-Abaixo está o código completo utilizado no ESP32 para simular o sistema de irrigação automatizado:
+> ⚠️ **Observação:** O código abaixo deve ser colado no IDE Arduino, compilado e enviado para o ESP32 no simulador Wokwi ou em hardware real. Certifique-se de ajustar os pinos se necessário.
 
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
@@ -196,6 +194,8 @@ void loop() {
 
 
 ## 📜 Streamlit + Scikit-learn
+
+> O dashboard está localizado na pasta `src/` como `app.py` e pode ser executado com `streamlit run app.py`. O modelo preditivo é salvo como pickle na mesma pasta.
 
 - Dashboard com:
   - Tabela de registros
