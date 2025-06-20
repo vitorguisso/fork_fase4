@@ -56,7 +56,7 @@ Na Fase 4 aprimoramos:
 
 Abaixo, um exemplo da exibição das leituras no **Monitor Serial**, com mensagens de alerta para pH, fósforo e potássio:
 
-![Monitor Serial](./assets/visor.PNG)
+![Monitor Serial](../assets/visor.PNG)
 
 ---
 
@@ -64,7 +64,7 @@ Abaixo, um exemplo da exibição das leituras no **Monitor Serial**, com mensage
 
 O **Serial Plotter** mostra a curva de variação da umidade em tempo real, ajudando a visualizar o acionamento da bomba:
 
-![Gráfico de Umidade](./assets/grafico_pHxumidade.png)
+![Gráfico de Umidade](../assets/grafico_pHxumidade.png)
 
 
 ## 📜 Código ESP32
