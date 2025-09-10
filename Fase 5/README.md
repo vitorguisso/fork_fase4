@@ -43,6 +43,7 @@ Notebook desenvolvido em Google Colab com os seguintes objetivos:
 - Discussão crítica de resultados
 
 **Base de dados utilizada:** `crop_yield.csv`
+[📊 Estimativa em Excel (xlsx)](https://github.com/vitorguisso/fork_fase4/blob/master/Fase%205/document/estimativa_aws.xlsx)
 
 📎 [Abrir notebook no Google Colab](https://colab.research.google.com/github/vitorguisso/fork_fase4/blob/master/Fase%205/src/VitorGuisso_rm562317_pbl_fase5.ipynb)
 
