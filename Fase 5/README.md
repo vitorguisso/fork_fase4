@@ -225,7 +225,8 @@ A **melhor escolha é a região de São Paulo**, mesmo com custo mensal mais ele
 
 ## 🎥 Demonstração em Vídeo
 
-📺 [Assista à demonstração de uso da AWS Calculator](https://youtu.be/SEU-LINK-AQUI)
+📺 [Assista à demonstração do Código COLAB](https://youtu.be/tY26-QQB1II)
+📺 [Assista à demonstração de uso da AWS Calculator](https://youtu.be/JIm8KjUIuK4)
 
 ---
 
