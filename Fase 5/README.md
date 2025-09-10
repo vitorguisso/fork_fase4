@@ -78,7 +78,7 @@ Notebook desenvolvido em Google Colab com os seguintes objetivos:
 | 3       | Baixo Rendimento   | <10.000     | Rubber, Beans          |
 
 ---
-## 🌽 Análise de Clusterização e Tendências de Produtividade Agrícola
+##  Análise de Clusterização e Tendências de Produtividade Agrícola
 
 ### 🎯 Objetivo da Análise
 
