@@ -97,9 +97,9 @@ Simulação do custo de execução da solução de Machine Learning em duas regi
 
 ### 🔧 Especificações da instância:
 - 2 CPUs
-- 1 GiB RAM
+- 1 GiB 
 - 5 Gbps de rede
-- 50 GB EBS
+- 50 GB 
 - Linux (On-demand)
 
 ---
