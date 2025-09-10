@@ -78,7 +78,58 @@ Notebook desenvolvido em Google Colab com os seguintes objetivos:
 | 3       | Baixo Rendimento   | <10.000     | Rubber, Beans          |
 
 ---
+## 🌽 Análise de Clusterização e Tendências de Produtividade Agrícola
 
+### 🎯 Objetivo da Análise
+
+Aplicar **clusterização (KMeans, K=4)** e **redução de dimensionalidade (PCA)** para agrupar culturas agrícolas com base em variáveis climáticas e produtivas: precipitação, temperatura, umidade relativa e rendimento (Yield). O objetivo foi encontrar padrões ocultos e auxiliar na tomada de decisão técnica e agronômica.
+
+---
+
+### 📊 Perfil dos Clusters
+
+| Cluster | Condições Climáticas         | Yield Médio | Destaque                     |
+|---------|------------------------------|-------------|------------------------------|
+| 0       | Alta umidade e precipitação  | 178.310     | Oil palm fruit (66%)        |
+| 1       | Temperatura alta, menos úmido| 29.671      | Cocoa, Rice, Rubber          |
+| 2       | Clima ideal, mas baixo yield | 16.624      | Culturas mal adaptadas       |
+| 3       | Clima seco, mas yield razoável| 51.344     | Boa resiliência das culturas |
+
+---
+
+### 📌 Principais Tendências e Insights
+
+- **Cluster 0**: Altamente produtivo. Ideal para culturas tropicais. Indicado para investimento em tecnologias de precisão.
+- **Cluster 1**: Clima bom, mas rendimento baixo. Pode exigir melhorias no manejo hídrico.
+- **Cluster 2**: Condições perfeitas, porém desempenho fraco. Sinaliza problemas graves — pragas, solo ou genética inadequada.
+- **Cluster 3**: Mesmo em clima desfavorável, apresenta rendimento superior ao Cluster 2 — indica **resiliência cultural**.
+
+---
+
+### 🚨 Detecção de Cenários Discrepantes (Outliers)
+
+**Cluster 2** foi identificado como o mais preocupante:
+- Clima favorável;
+- Produtividade extremamente baixa;
+- Indica falhas fora do clima: **cultura mal adaptada**, **problemas de solo**, **presença de pragas** ou **erro de manejo**.
+
+---
+
+### ✅ Conclusões Estratégicas
+
+A clusterização foi eficaz para:
+
+- Agrupar culturas com base em clima e rendimento real;
+- Detectar **zonas de alto potencial não aproveitado**;
+- Gerar insights sobre **substituição de culturas**, **ajustes técnicos**, e **foco em regiões resilientes**.
+
+> Esta abordagem ajuda gestores agrícolas a tomar decisões mais embasadas, adaptando culturas às condições ambientais e otimizando o rendimento por hectare.
+
+
+
+
+
+---
 ### 📊 Modelagem Preditiva
 
 Foram utilizados:
