@@ -95,10 +95,6 @@ Foram utilizados:
 
 ---
 
-## ☁️ Atividade 2 — Estimativa de Custos na AWS
-
-Simulação do custo de execução da solução de Machine Learning em duas regiões da AWS, considerando:
-
 ## 📌 Resumo e Conclusão
 
 Durante esta fase, avaliamos o desempenho de diferentes algoritmos de regressão na previsão de rendimento agrícola com base em variáveis climáticas. Os principais resultados foram:
@@ -135,7 +131,10 @@ Apesar dos resultados estatísticos modestos, o experimento foi valioso para:
 > 🔁 **Em resumo**: os algoritmos não falharam — **os dados fornecidos foram limitantes**.  
 > Uma base mais rica e contextualizada permitiria extrair todo o potencial dos modelos aplicados.
 
+---
+## ☁️ Atividade 2 — Estimativa de Custos na AWS
 
+Simulação do custo de execução da solução de Machine Learning em duas regiões da AWS, considerando:
 ### 🔧 Especificações da instância:
 - 2 CPUs
 - 1 GiB 
