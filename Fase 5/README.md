@@ -202,7 +202,8 @@ Simulação do custo de execução da solução de Machine Learning em duas regi
 | São Paulo (sa-east-1)     | t3.micro    | USD 14,48     | ✅ Menor latência, conformidade LGPD     |
 | Virgínia do Norte (us-east-1) | t3.micro    | USD 8,25      | ✅ Mais barato, ⚠️ Latência e LGPD       |
 
-📄 [Ver estimativa completa na AWS](https://calculator.aws/#/estimate?id=5e388108dec7154c0db86ae2278a183ba6d2784f)
+📄 [Ver estimativa completa em PDF](https://github.com/SEU_USUARIO/SEU_REPOSITORIO/raw/main/fase5/docs/aws-estimate.pdf)
+
 
 ---
 
