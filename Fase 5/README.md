@@ -206,13 +206,20 @@ Simulação do custo de execução da solução de Machine Learning em duas regi
 
 ---
 
-### ✅ Conclusão
+## ✅ Conclusão e Escolha Justificada
 
-- **Custo**: Virgínia é mais econômica (~28% mais barata)
-- **Latência**: São Paulo atende melhor sensores no Brasil
-- **LGPD**: Brasil é a escolha mais segura para dados sensíveis
+Se **não houver restrições legais** nem **exigência de baixa latência**, a região da **Virgínia (US East)** é a mais vantajosa economicamente, com **custo 28% mais baixo**, mantendo a mesma configuração de instância e armazenamento.
 
-🔎 A escolha depende do **nível de criticidade dos dados** e do **tempo de resposta necessário**.
+Porém, ao considerar os seguintes fatores:
+
+- 📡 Necessidade de **acesso rápido aos dados dos sensores**
+- ⚖️ **Restrições legais** quanto ao armazenamento de dados no exterior (LGPD)
+
+A **melhor escolha é a região de São Paulo**, mesmo com custo mensal mais elevado, pois:
+
+-  Reduz significativamente a **latência na comunicação com sensores locais**
+-  Evita **riscos legais e penalidades** ligadas à Lei Geral de Proteção de Dados (LGPD)
+-  Garante **maior conformidade com políticas de segurança e soberania dos dados**
 
 ---
 
