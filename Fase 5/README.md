@@ -83,13 +83,11 @@ Notebook desenvolvido em Google Colab com os seguintes objetivos:
 
 Foram utilizados:
 
-- Linear Regression
-- Decision Tree
-- Random Forest
-- SVR
-- XGBoost
-
-O **XGBoost** apresentou o melhor desempenho geral entre os modelos, com maior capacidade de generalização e menor erro.
+1 - Regressão Linear
+2 - Árvore de Decisão
+3 - Floresta Aleatória
+4 - KNN Regressor
+5 - Support Vector Regressor
 
 ---
 
