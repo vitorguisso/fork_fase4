@@ -99,6 +99,43 @@ Foram utilizados:
 
 Simulação do custo de execução da solução de Machine Learning em duas regiões da AWS, considerando:
 
+## 📌 Resumo e Conclusão
+
+Durante esta fase, avaliamos o desempenho de diferentes algoritmos de regressão na previsão de rendimento agrícola com base em variáveis climáticas. Os principais resultados foram:
+
+- **Regressão Linear** foi o único modelo a apresentar R² positivo em todas as culturas, destacando-se em *Rice* (R² = 0.3897), mas com poder explicativo ainda limitado.
+- **Árvore de Decisão** e **Floresta Aleatória** tiveram desempenho insatisfatório, sugerindo overfitting ou variáveis insuficientes para explicar a produtividade.
+- **KNN** apresentou leve vantagem em *Rice*, mas foi fraco nas demais culturas.
+- **SVR** teve o pior desempenho geral, com R² negativo em todas as culturas, indicando incapacidade de generalizar padrões relevantes.
+
+### 🔍 Possíveis causas para o baixo desempenho:
+
+- **Base de dados pequena**: cada cultura possui apenas 39 amostras, o que compromete a robustez dos modelos.
+- **Variáveis insuficientes**: apenas fatores climáticos foram considerados. Informações como tipo de solo, fertilizantes, genética, pragas e técnicas de manejo estão ausentes.
+- **Falta de contexto agronômico**: ausência de dados sobre ciclos de cultivo, épocas de plantio ou características específicas das culturas dificultam a modelagem.
+- **Tratamento superficial dos dados**: possíveis outliers e necessidade de agregações temporais (ex: médias mensais) não foram abordadas.
+
+---
+
+## ✅ Considerações Finais
+
+Apesar dos resultados estatísticos modestos, o experimento foi valioso para:
+
+- Testar e comparar diferentes algoritmos com dados reais;
+- Refletir sobre a importância da qualidade e diversidade dos dados na modelagem preditiva;
+- Identificar gargalos e oportunidades de melhoria na coleta e preparação dos dados.
+
+### 📌 Recomendações futuras:
+
+- Aumentar a base de dados com mais amostras por cultura;
+- Incluir variáveis agronômicas e de manejo;
+- Explorar modelos mais robustos e complexos (como XGBoost e Redes Neurais);
+- Trabalhar em conjunto com especialistas do campo (engenheiros agrônomos, produtores).
+
+> 🔁 **Em resumo**: os algoritmos não falharam — **os dados fornecidos foram limitantes**.  
+> Uma base mais rica e contextualizada permitiria extrair todo o potencial dos modelos aplicados.
+
+
 ### 🔧 Especificações da instância:
 - 2 CPUs
 - 1 GiB 
