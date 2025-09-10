@@ -23,64 +23,113 @@
 
 ---
 
-## 📜 Descrição
+## 📜 Descrição Geral
 
-Este projeto foi desenvolvido para analisar dados climáticos e de solo com o objetivo de prever o **rendimento agrícola** em fazendas atendidas pela FarmTech Solutions. A Fase 5 é composta por duas entregas complementares:
+A Fase 5 contempla duas atividades integradas, voltadas à aplicação prática de Ciência de Dados no agronegócio e à simulação de custo computacional em ambiente de nuvem (AWS):
 
-### 📌 Parte 1 — Google Colab:  
-**Previsão de Rendimento Agrícola com Regressão Supervisionada e Análise de Clusters**
-
-Etapas realizadas:
-- Análise Exploratória dos Dados (EDA)
-- Identificação de padrões com **KMeans (K=4)** + **PCA**
-- Modelagem Preditiva com **5 algoritmos de Regressão**:
-  - Linear Regression
-  - Decision Tree Regressor
-  - Random Forest Regressor
-  - SVR (Support Vector Regression)
-  - XGBoost Regressor
-- Avaliação com métricas: R² Score, MAE, MSE, RMSE
-
-Base de dados utilizada: `crop_yield.csv`
+1. Previsão de Rendimento Agrícola com Machine Learning (Google Colab)
+2. Simulação de Custos em Nuvem para Execução da Solução
 
 ---
 
-## 🧠 Principais Bibliotecas Utilizadas
+## 📈 Atividade 1 — Previsão de Rendimento Agrícola com Regressão e Clusters
+
+Notebook desenvolvido em Google Colab com os seguintes objetivos:
+
+- Análise Exploratória dos Dados (EDA)
+- Clusterização com KMeans + PCA
+- Modelagem Preditiva com 5 algoritmos de regressão
+- Avaliação com métricas (R², MAE, MSE, RMSE)
+- Discussão crítica de resultados
+
+**Base de dados utilizada:** `crop_yield.csv`
+
+📎 [Abrir notebook no Google Colab](https://colab.research.google.com/github/vitorguisso/fork_fase4/blob/master/Fase%205/src/VitorGuisso_rm562317_pbl_fase5.ipynb)
+
+> ⚠️ **Observação**:  
+> O notebook utiliza `ipywidgets`, e por isso **não é renderizado corretamente no GitHub**.  
+> Para visualização completa e interativa, abra diretamente no **Google Colab**.
+
+---
+
+### 🔍 Bibliotecas utilizadas
 
 - `pandas`, `numpy`
 - `matplotlib`, `seaborn`, `plotly`
-- `sklearn` (PCA, KMeans, métricas, regressão)
+- `sklearn`: KMeans, PCA, regressão, métricas
 - `xgboost`
+- `ipywidgets`
 
 ---
 
-## 📈 Clusterização com PCA + KMeans
+### 🔬 Clusterização com KMeans + PCA
 
-- Redução de dimensionalidade com PCA para 2D
-- Agrupamento em 4 clusters:
-  - **Cluster 0 ("Superprodutivo")**: clima ideal, dominado por *Oil palm fruit*
-  - **Cluster 1 ("Equilíbrio")**: culturas com bom rendimento e estabilidade
-  - **Cluster 2 ("Moderado")**: boa umidade, menor yield
-  - **Cluster 3 ("Baixo rendimento")**: condições climáticas menos favoráveis
+- **K = 4 clusters**
+- Redução dimensional com PCA (2D)
+- Variáveis analisadas: temperatura, umidade, precipitação e produtividade
 
-Insights:
-- Mesmo sob clima similar, cada cultura responde de forma única.
-- *Oil palm fruit* distorce modelos se não for tratada separadamente.
-- Agrupar culturas permite modelos mais estáveis e específicos.
+#### 🧠 Perfis de Clusters:
+
+| Cluster | Perfil             | Yield Médio | Cultura dominante     |
+|---------|--------------------|-------------|------------------------|
+| 0       | Superprodutivo     | 178.310     | Oil palm fruit         |
+| 1       | Equilibrado        | ~32.000     | Rice, Cocoa            |
+| 2       | Moderado           | ~20.000     | Rubber, Beans          |
+| 3       | Baixo Rendimento   | <10.000     | Rubber, Beans          |
 
 ---
 
-## 🤖 Modelos Preditivos
+### 📊 Modelagem Preditiva
 
-Os seguintes modelos foram treinados com validação cruzada:
+Foram utilizados:
 
-- **Linear Regression** → base de comparação
-- **Random Forest** → alto desempenho com poucos ajustes
-- **XGBoost** → melhor resultado geral
-- **SVR** → desempenho mediano
-- **Decision Tree** → rápido, mas propenso a overfitting
+- Linear Regression
+- Decision Tree
+- Random Forest
+- SVR
+- XGBoost
 
-Métricas como RMSE e R² foram usadas para avaliar a performance dos modelos. O **XGBoost** apresentou o melhor equilíbrio entre precisão e robustez.
+O **XGBoost** apresentou o melhor desempenho geral entre os modelos, com maior capacidade de generalização e menor erro.
+
+---
+
+## ☁️ Atividade 2 — Estimativa de Custos na AWS
+
+Simulação do custo de execução da solução de Machine Learning em duas regiões da AWS, considerando:
+
+### 🔧 Especificações da instância:
+- 2 CPUs
+- 1 GiB RAM
+- 5 Gbps de rede
+- 50 GB EBS
+- Linux (On-demand)
+
+---
+
+### 🌍 Comparativo de regiões
+
+| Região               | Instância   | Custo Mensal | Observações                            |
+|---------------------|-------------|--------------|----------------------------------------|
+| São Paulo (sa-east-1)     | t3.micro    | USD 14,48     | ✅ Menor latência, conformidade LGPD     |
+| Virgínia do Norte (us-east-1) | t3.micro    | USD 8,25      | ✅ Mais barato, ⚠️ Latência e LGPD       |
+
+📄 [Ver estimativa completa na AWS](https://calculator.aws/#/estimate?id=5e388108dec7154c0db86ae2278a183ba6d2784f)
+
+---
+
+### ✅ Conclusão
+
+- **Custo**: Virgínia é mais econômica (~28% mais barata)
+- **Latência**: São Paulo atende melhor sensores no Brasil
+- **LGPD**: Brasil é a escolha mais segura para dados sensíveis
+
+🔎 A escolha depende do **nível de criticidade dos dados** e do **tempo de resposta necessário**.
+
+---
+
+## 🎥 Demonstração em Vídeo
+
+📺 [Assista à demonstração de uso da AWS Calculator](https://youtu.be/SEU-LINK-AQUI)
 
 ---
 
@@ -88,22 +137,21 @@ Métricas como RMSE e R² foram usadas para avaliar a performance dos modelos. O
 
 | Pasta/Arquivo                | Descrição |
 | ---------------------------  | --------- |
-| **assets/**                  | Imagens, gráficos e logos |
-| **document/**                | Documentos técnicos e relatórios |
-| **scripts/**                 | Scripts auxiliares (ex: manipulação de dados) |
-| **src/**                     | Código-fonte principal (ex: notebook Colab) |
-| **README.md**                | Este arquivo de apresentação |
+| **assets/**                  | Imagens e gráficos |
+| **document/**                | Documentos técnicos (PDFs, relatórios) |
+| **scripts/**                 | Scripts auxiliares |
+| **src/**                     | Código principal (`.ipynb`) |
+| **README.md**                | Instruções e documentação do projeto |
 
 ---
 
 ## 🗂️ Histórico de Lançamentos
 
 * 0.1.0 - 09/09/2025  
-  - Entrega inicial da análise preditiva e clusterização
+  - Entrega completa da Fase 5: Colab + AWS
 
 ---
 
 ## 📋 Licença
 
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
-
