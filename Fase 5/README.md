@@ -8,7 +8,7 @@
 
 <br>
 
-# FarmTech Solutions — Fase 4
+# FarmTech Solutions — Fase 5
 
 ## 👨‍🎓 Integrantes:
 - [Ryan Carlos Sousa Alves da Cunha](https://www.linkedin.com/company/inova-fusca)
@@ -25,15 +25,62 @@
 
 ## 📜 Descrição
 
-Este projeto simula um sistema **inteligente de irrigação e monitoramento** usando:
-- Sensores de **umidade**, **pH**, **presença de fósforo e potássio**
-- Controle automatizado de **bomba de água** usando **ESP32** no **Wokwi**
-- Interface gráfica com **Streamlit**
-- Modelagem preditiva com **Scikit-learn**
-- Integração com **Banco de Dados Oracle**
-- Visualização de dados com **Serial Plotter**
+Este projeto foi desenvolvido para analisar dados climáticos e de solo com o objetivo de prever o **rendimento agrícola** em fazendas atendidas pela FarmTech Solutions. A Fase 5 é composta por duas entregas complementares:
 
-O sistema coleta dados em tempo real, decide quando irrigar, armazena no banco de dados e permite visualização e previsões pelo dashboard.
+### 📌 Parte 1 — Google Colab:  
+**Previsão de Rendimento Agrícola com Regressão Supervisionada e Análise de Clusters**
+
+Etapas realizadas:
+- Análise Exploratória dos Dados (EDA)
+- Identificação de padrões com **KMeans (K=4)** + **PCA**
+- Modelagem Preditiva com **5 algoritmos de Regressão**:
+  - Linear Regression
+  - Decision Tree Regressor
+  - Random Forest Regressor
+  - SVR (Support Vector Regression)
+  - XGBoost Regressor
+- Avaliação com métricas: R² Score, MAE, MSE, RMSE
+
+Base de dados utilizada: `crop_yield.csv`
+
+---
+
+## 🧠 Principais Bibliotecas Utilizadas
+
+- `pandas`, `numpy`
+- `matplotlib`, `seaborn`, `plotly`
+- `sklearn` (PCA, KMeans, métricas, regressão)
+- `xgboost`
+
+---
+
+## 📈 Clusterização com PCA + KMeans
+
+- Redução de dimensionalidade com PCA para 2D
+- Agrupamento em 4 clusters:
+  - **Cluster 0 ("Superprodutivo")**: clima ideal, dominado por *Oil palm fruit*
+  - **Cluster 1 ("Equilíbrio")**: culturas com bom rendimento e estabilidade
+  - **Cluster 2 ("Moderado")**: boa umidade, menor yield
+  - **Cluster 3 ("Baixo rendimento")**: condições climáticas menos favoráveis
+
+Insights:
+- Mesmo sob clima similar, cada cultura responde de forma única.
+- *Oil palm fruit* distorce modelos se não for tratada separadamente.
+- Agrupar culturas permite modelos mais estáveis e específicos.
+
+---
+
+## 🤖 Modelos Preditivos
+
+Os seguintes modelos foram treinados com validação cruzada:
+
+- **Linear Regression** → base de comparação
+- **Random Forest** → alto desempenho com poucos ajustes
+- **XGBoost** → melhor resultado geral
+- **SVR** → desempenho mediano
+- **Decision Tree** → rápido, mas propenso a overfitting
+
+Métricas como RMSE e R² foram usadas para avaliar a performance dos modelos. O **XGBoost** apresentou o melhor equilíbrio entre precisão e robustez.
 
 ---
 
@@ -41,81 +88,20 @@ O sistema coleta dados em tempo real, decide quando irrigar, armazena no banco d
 
 | Pasta/Arquivo                | Descrição |
 | ---------------------------  | --------- |
-| **assets/**                  | Imagens do circuito, gráficos, logo, prints |
-| **document/**                | Documentos técnicos: MER, CRUD, Solução Técnica |
-| **scripts/**                 | Scripts SQL para criação da tabela `sistema_irrigacao` |
-| **src/**                     | Códigos executáveis: `app.py` (Streamlit + Scikit-learn), `sistema_irrigacao.py` (CRUD com Oracle),C++ |
-| **README.md**                | Este arquivo com instruções gerais |
+| **assets/**                  | Imagens, gráficos e logos |
+| **document/**                | Documentos técnicos e relatórios |
+| **scripts/**                 | Scripts auxiliares (ex: manipulação de dados) |
+| **src/**                     | Código-fonte principal (ex: notebook Colab) |
+| **README.md**                | Este arquivo de apresentação |
 
 ---
 
-## 🔧 Como executar
+## 🗂️ Histórico de Lançamentos
 
-### 📌 **1) Simulador Wokwi**
-- [🌐 Acesse o Circuito Wokwi](https://wokwi.com/projects/434291929867724801)
-- Rode o circuito para visualizar:
-  - Sensores simulados
-  - Relay simulando a bomba
-  - Display LCD com status
-  - Serial Plotter mostrando a variável de umidade.
+* 0.1.0 - 09/09/2025  
+  - Entrega inicial da análise preditiva e clusterização
 
-### 📌 **2) Backend Python**
-- **Requisitos:**
-  - Python 3.x
-  - Pacotes:
-    - `cx_Oracle`
-    - `pandas`
-    - `scikit-learn`
-    - `streamlit`
-    - Oracle Instant Client 64-bit (instalado e configurado no Path)
-    - Conta ativa Oracle FIAP (banco de dados remoto)*
-    
-- **Instalar dependências:**
-  ```bash
-  pip install cx_Oracle pandas scikit-learn streamlit
-
-
-## 🔧 CONEXÃO COM O BANCO ORACLE
-- CRUD completo: CREATE, INSERT, UPDATE, DELETE, SELECT
-- Scripts no diretório scripts/
-- Conexão via cx_Oracle.
-
-**⚠️ Importante:** Este projeto está configurado com os dados do aluno RM562317.
-Se outro usuário for testar, é necessário alterar as credenciais no código.
-
-Substitua por seus dados:
-username = "SEU_USUARIO"  # Ex: RM123456
-password = "SUA_SENHA"
-dsn = "oracle.fiap.com.br/orcl"
-
-## 📜 Streamlit + Scikit-learn
-- Dashboard com tabela, gráfico histórico de umidade e predição online.
-- Pipeline salvo em pickle.
-
-## ✅ Executar Dashboard Streamlit
-streamlit run src/app.py
-## ✅ Executar CRUD Oracle
-python src/sistema_irrigacao.py
-## ✅ Criar tabela Oracle
-Execute o script SQL em scripts/ ou rode:
-CREATE TABLE sistema_irrigacao (
-  id NUMBER GENERATED BY DEFAULT ON NULL AS IDENTITY PRIMARY KEY,
-  umidade NUMBER(5,2),
-  ph NUMBER(4,2),
-  fosforo VARCHAR2(10),
-  potassio VARCHAR2(10),
-  bomba VARCHAR2(10)
-);
-
-## 🔗 **Links**
-
-- [🌐 Acesse o Circuito Wokwi](https://wokwi.com/projects/434291929867724801)
-- [▶️ Assista ao Vídeo no YouTube](https://youtu.be/hbWBFAC73Io)
-
-## 🗃 Histórico de lançamentos
-
-* 0.1.0 - 20/06/2025
-    *
+---
 
 ## 📋 Licença
 
