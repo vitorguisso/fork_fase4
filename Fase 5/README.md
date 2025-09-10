@@ -84,9 +84,13 @@ Notebook desenvolvido em Google Colab com os seguintes objetivos:
 Foram utilizados:
 
 1 - Regressão Linear
+
 2 - Árvore de Decisão
+
 3 - Floresta Aleatória
+
 4 - KNN Regressor
+
 5 - Support Vector Regressor
 
 ---
