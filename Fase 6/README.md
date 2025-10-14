@@ -148,6 +148,23 @@ Após a implementação e avaliação dos três modelos propostos — **CNN do z
 - Explorar outras arquiteturas (Faster R-CNN, EfficientDet) para comparação futura.
 
 ---
+## 📁 Estrutura de Pastas
+
+| Pasta/Arquivo                | Descrição |
+| ---------------------------  | --------- |
+| **assets/**                  | Imagens e gráficos |
+| **document/**                | Documentos técnicos (PDFs, relatórios) |
+| **scripts/**                 | Scripts auxiliares |
+| **src/**                     | Código principal (`.ipynb`) |
+| **README.md**                | Instruções e documentação do projeto |
+
+---
+
+## 🗂️ Histórico de Lançamentos
+
+* 0.1.0 - 14/10/2025  
+  - Entrega completa da Fase 6
+---
 
 ## 📋 Licença
 
