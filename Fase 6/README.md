@@ -53,21 +53,39 @@ A **FarmTech Solutions**, empresa fictícia de inovação no agronegócio, busca
 
 - [📓 Notebook Fase 6](https://github.com/vitorguisso/fork_fase4/blob/master/Fase%206/src/VitorGuisso_rm562317_pbl_fase6.ipynb) (Caso não abra corretamente, utilize o arquivo .ipynb localizado em scripts)
 - 📺 **Vídeo de Demonstração (5 min):** [YouTube - Não listado](#)  
-- 📊 **Relatórios e imagens de inferência:** `docs/resultados_ep30/` e `docs/resultados_coco/`
-- ## 📂 Dataset — Fase 6
 
-O dataset utilizado neste projeto está disponível publicamente no Google Drive.  
-Ele contém as imagens e rótulos utilizados para treinar e avaliar os modelos YOLOv8 e CNN.
+---
+## 📁 Arquivos do Projeto — Fase 6
 
-📎 [Acessar Dataset no Google Drive](https://drive.google.com/drive/folders/1SmJSAe45lyQtrxiUbv5JriFim3BAgRya)  
+Todos os arquivos gerados e utilizados neste projeto estão disponíveis em uma única pasta no Google Drive:
 
-**Conteúdo da pasta:**
-- `DATASET.rar` — Arquivo compactado contendo imagens e labels no formato YOLO.
+👉 [Acessar Arquivos no Google Drive](https://drive.google.com/drive/folders/1SmJSAe45lyQtrxiUbv5JriFim3BAgRya)
 
-**Como utilizar:**
-1. Faça o download do arquivo `.rar`.  
-2. Extraia o conteúdo dentro do diretório `/content/` no Google Colab.  
-3. Atualize os caminhos no notebook, se necessário, para apontar para a pasta extraída.
+### 📦 Conteúdo da Pasta
+
+- `DADOS GERADOS COLAB.zip` — Arquivo compactado contendo:
+  - Resultados de treinamento YOLO (pesos, métricas, inferências)
+  - Resultados da avaliação dos modelos (YOLO adaptável, YOLO COCO e CNN)
+  - Arquivos auxiliares e gráficos gerados no Colab
+
+- `DATASET.rar` — Dataset completo utilizado para treino, validação e teste:
+  - Imagens e labels no formato YOLO
+  - Duas classes: *bovino* e *funcionário*
+
+---
+
+### 🛠️ Como Utilizar no Colab
+
+1. Faça o download do arquivo desejado (`.zip` ou `.rar`).
+2. Extraia o conteúdo dentro do diretório `/content/` no Google Colab.
+3. Atualize os caminhos no notebook, se necessário, para apontar para as pastas extraídas.
+4. Execute o notebook para reproduzir os resultados ou realizar novos testes.
+
+---
+
+✅ **Dica:**  
+- Para executar apenas o modelo já treinado → baixe **`DADOS GERADOS COLAB.zip`**.  
+- Para refazer todo o treinamento → baixe também **`DATASET.rar`**.
 
 
 ---
