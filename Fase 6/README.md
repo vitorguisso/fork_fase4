@@ -53,7 +53,7 @@ A **FarmTech Solutions**, empresa fictícia de inovação no agronegócio, busca
 
 - [📓 Notebook Fase 6](https://github.com/vitorguisso/fork_fase4/blob/master/Fase%206/src/VitorGuisso_rm562317_pbl_fase6.ipynb) (Caso não abra corretamente, utilize o arquivo .ipynb localizado em scripts)
 - 📺 **Vídeo de Demonstração (5 min):** [YouTube - Não listado](#)  
-- 📝 **📂 [Acessar Dataset no Google Drive](https://drive.google.com/drive/folders/1SmJAe45lyQtrxiUbv5JrFim3BAgRya)
+- 📝 ** [Acessar Dataset no Google Drive]([https://drive.google.com/drive/folders/1SmJAe45lyQtrxiUbv5JrFim3BAgRya](https://drive.google.com/drive/u/9/folders/1SmJSAe45lyQtrxiUbv5JriFim3BAgRya))
 - 📊 **Relatórios e imagens de inferência:** `docs/resultados_ep30/` e `docs/resultados_coco/`
 
 ---
