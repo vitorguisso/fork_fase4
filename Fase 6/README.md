@@ -8,10 +8,9 @@
 
 <br>
 
-# 🐄👷 FarmTech Solutions — Fase 6
+#  FarmTech Solutions — Fase 6
 
 ## 👨‍🎓 Integrantes:
-- [Ryan Carlos Sousa Alves da Cunha](https://www.linkedin.com/company/inova-fusca)
 - [Vinícius Pereira Santana](https://www.linkedin.com/company/inova-fusca)
 - [Vitor Augusto Prado Guisso](https://www.linkedin.com/company/inova-fusca)
 
