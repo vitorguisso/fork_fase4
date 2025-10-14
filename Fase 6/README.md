@@ -69,7 +69,7 @@ Todos os arquivos gerados e utilizados neste projeto estão disponíveis em uma 
   - Arquivos auxiliares e gráficos gerados no Colab
 
 - `DATASET.rar` — Dataset completo utilizado para treino, validação e teste:
-  - Imagens e labels no formato YOLO
+  - Imagens e label
   - Duas classes: *bovino* e *funcionário*
 
 ---
@@ -80,13 +80,6 @@ Todos os arquivos gerados e utilizados neste projeto estão disponíveis em uma 
 2. Extraia o conteúdo dentro do diretório `/content/` no Google Colab.
 3. Atualize os caminhos no notebook, se necessário, para apontar para as pastas extraídas.
 4. Execute o notebook para reproduzir os resultados ou realizar novos testes.
-
----
-
-✅ **Dica:**  
-- Para executar apenas o modelo já treinado → baixe **`DADOS GERADOS COLAB.zip`**.  
-- Para refazer todo o treinamento → baixe também **`DATASET.rar`**.
-
 
 ---
 
