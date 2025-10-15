@@ -51,7 +51,7 @@ A **FarmTech Solutions**, empresa fictícia de inovação no agronegócio, busca
 
 ## 🔗 Links Importantes
 
-- [📓 Notebook Fase 6](https://github.com/vitorguisso/fork_fase4/blob/master/Fase%206/src/VitorGuisso_rm562317_pbl_fase6.ipynb) (Caso não abra corretamente, utilize o arquivo .ipynb localizado em scripts)
+- [📓 Notebook Fase 6](https://github.com/vitorguisso/fork_fase4/blob/master/Fase%206/src/VitorGuisso_rm562317_fase6.ipynb) (Caso não abra corretamente, utilize o arquivo .ipynb localizado em scripts)
 - 🎥 **Vídeo de Demonstração 01:** [ENTREGA 01](https://youtu.be/oz_56gqe5iA)
 - 📺 **Vídeo de Demonstração 02:** [ENTREGA 02](#)  
 
