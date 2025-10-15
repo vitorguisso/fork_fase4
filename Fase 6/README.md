@@ -1,4 +1,4 @@
-# FIAP - Faculdade de Informática e Administração Paulista
+s# FIAP - Faculdade de Informática e Administração Paulista
 
 <p align="center">
 <a href="https://www.fiap.com.br/">
@@ -52,7 +52,8 @@ A **FarmTech Solutions**, empresa fictícia de inovação no agronegócio, busca
 ## 🔗 Links Importantes
 
 - [📓 Notebook Fase 6](https://github.com/vitorguisso/fork_fase4/blob/master/Fase%206/src/VitorGuisso_rm562317_pbl_fase6.ipynb) (Caso não abra corretamente, utilize o arquivo .ipynb localizado em scripts)
-- 📺 **Vídeo de Demonstração (5 min):** [YouTube - Não listado](#)  
+- 🎥 **Vídeo de Demonstração ENTREGA 01:** [YouTube - Não listado](https://youtu.be/oz_56gqe5iA)
+- 📺 **Vídeo de Demonstração ENTREGA 02:** [YouTube - Não listado](#)  
 
 ---
 ## 📁 Arquivos do Projeto — Fase 6
