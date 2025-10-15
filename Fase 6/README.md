@@ -138,31 +138,15 @@ Nesta entrega, foi desenvolvido um **sistema de visão computacional baseado em 
 
 ## 📊 Conclusão Final — Entrega 2 (Comparativo de Modelos)
 
-Após a implementação e avaliação dos três modelos propostos — **CNN do zero**, **YOLO padrão (pré-treinado COCO)** e **YOLO adaptável (fine-tuning)** — foi possível observar diferenças claras em desempenho, robustez e capacidade de generalização.
-
-| Modelo                     | Arquitetura                       | Acurácia (Test) | Precision | Recall | mAP50 | mAP50-95 | Tempo de Inferência (ms/img) | Classes Simultâneas | Observações Principais                                                                 |
-|----------------------------|-------------------------------------|-----------------|-----------|--------|--------|-----------|-------------------------------|----------------------|-----------------------------------------------------------------------------------------|
-| CNN do Zero                | ConvNet (3 blocos)                 | **0.25**        | —         | —      | —      | —         | —                             | ❌ (single-label)   | Modelo simples, rápido, mas incapaz de generalizar bem; previu majoritariamente uma única classe. |
-| YOLO Padrão (COCO)         | Detector pré-treinado (COCO)       | —              | **1.00**  | **1.00**| —      | —         | **196.87**                    | ✅ (multi-objeto)   | Reconheceu corretamente bovinos e funcionários com base em classes “cow” e “person” já aprendidas no COCO. |
-| YOLO Adaptável (ep30)      | YOLO treinado no dataset próprio   | —              | **0.804** | **0.571**| **0.706** | **0.448** | —                           | ✅ (multi-objeto)   | Bom desempenho geral, com detecção consistente das classes no dataset customizado.     |
-| YOLO Adaptável (ep60)      | YOLO treinado no dataset próprio   | —              | **0.000** | **0.000**| **0.000** | **0.000** | —                           | ✅ (multi-objeto)   | Overfitting evidente ou falha no treinamento. O modelo perdeu capacidade de generalização. |
-
-### 📌 Principais Diferenças
-- **YOLO adaptável (ep30)** apresentou bom equilíbrio entre precisão e recall.  
-- **YOLO padrão (COCO)** teve 100% de precisão e recall nas classes cow/person, mostrando força do transfer learning.  
-- **CNN** foi insuficiente para cenários multi-objeto.
-
 ---
-
 ## 🧭 Conclusão Geral do Projeto
 
-- ✅ **Modelos simples (CNN do zero)** servem como baseline, mas são limitados.  
-- 🚀 **YOLO padrão (pré-treinado)** é útil para protótipos rápidos.  
-- 🧠 **YOLO adaptável (30 épocas)** foi o melhor modelo, equilibrando precisão, robustez e aplicabilidade prática.  
-- ⚠️ **YOLO adaptável (60 épocas)** reforçou a importância de evitar overfitting em datasets pequenos.
+✅ Modelos simples (CNN do zero) são úteis apenas como baseline, mas insuficientes para problemas reais com múltiplos objetos.
+🚀 YOLO padrão (pré-treinado) teve desempenho bom para detectar pessoas mas ruim para bovinos.
+🧠 YOLO adaptável (ep30) apresentou boa performance com fine-tuning, mostrando o potencial do modelo quando ajustado ao contexto específico.
+⚠️ YOLO adaptável (ep60) teve desempenho ruim, possivelmente devido a overfitting, reforçando a importância de early stopping e monitoramento do treinamento.
 
-👉 **Recomendação prática:** Para aplicações reais de monitoramento em fazendas, a melhor estratégia é usar **YOLO pré-treinado com fine-tuning (30 épocas)**, garantindo detecção simultânea de bovinos e funcionários com alta confiabilidade.
-
+Conclusão: O modelo YOLO adaptável com fine-tuning (30 épocas) oferece o melhor equilíbrio entre precisão, robustez e aplicabilidade prática para um sistema de monitoramento automatizado em fazendas, capaz de detectar bovinos e funcionários ao mesmo tempo.
 ---
 
 ## 🚀 Sugestões de Melhoria
