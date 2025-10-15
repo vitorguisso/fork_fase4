@@ -141,12 +141,12 @@ Nesta entrega, foi desenvolvido um **sistema de visão computacional baseado em 
 ---
 ## 🧭 Conclusão Geral do Projeto
 
-✅ Modelos simples (CNN do zero) são úteis apenas como baseline, mas insuficientes para problemas reais com múltiplos objetos.
-🚀 YOLO padrão (pré-treinado) teve desempenho bom para detectar pessoas mas ruim para bovinos.
-🧠 YOLO adaptável (ep30) apresentou boa performance com fine-tuning, mostrando o potencial do modelo quando ajustado ao contexto específico.
-⚠️ YOLO adaptável (ep60) teve desempenho ruim, possivelmente devido a overfitting, reforçando a importância de early stopping e monitoramento do treinamento.
+- ✅ Modelos simples (CNN do zero) são úteis apenas como baseline, mas insuficientes para problemas reais com múltiplos objetos.
+- 🚀 YOLO padrão (pré-treinado) teve desempenho bom para detectar pessoas mas ruim para bovinos.
+- 🧠 YOLO adaptável (ep30) apresentou boa performance com fine-tuning, mostrando o potencial do modelo quando ajustado ao contexto específico.
+-⚠️ YOLO adaptável (ep60) teve desempenho ruim, possivelmente devido a overfitting, reforçando a importância de early stopping e monitoramento do treinamento.
 
-Conclusão: O modelo YOLO adaptável com fine-tuning (30 épocas) oferece o melhor equilíbrio entre precisão, robustez e aplicabilidade prática para um sistema de monitoramento automatizado em fazendas, capaz de detectar bovinos e funcionários ao mesmo tempo.
+- Conclusão: O modelo YOLO adaptável com fine-tuning (30 épocas) oferece o melhor equilíbrio entre precisão, robustez e aplicabilidade prática para um sistema de monitoramento automatizado em fazendas, capaz de detectar bovinos e funcionários ao mesmo tempo.
 ---
 
 ## 🚀 Sugestões de Melhoria
