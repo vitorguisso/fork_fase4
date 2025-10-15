@@ -1,0 +1,25 @@
+## 📁 Arquivos do Projeto — Fase 6
+
+Todos os arquivos gerados e utilizados neste projeto estão disponíveis em uma única pasta no Google Drive:
+
+👉 [Acessar Arquivos no Google Drive](https://drive.google.com/drive/folders/1SmJSAe45lyQtrxiUbv5JriFim3BAgRya)
+
+### 📦 Conteúdo da Pasta
+
+- `DADOS GERADOS COLAB.zip` — Arquivo compactado contendo:
+  - Resultados de treinamento YOLO (pesos, métricas, inferências)
+  - Resultados da avaliação dos modelos (YOLO adaptável, YOLO COCO e CNN)
+  - Arquivos auxiliares e gráficos gerados no Colab
+
+- `DATASET.rar` — Dataset completo utilizado para treino, validação e teste:
+  - Imagens e label
+  - Duas classes: *bovino* e *funcionário*
+
+---
+
+### 🛠️ Como Utilizar no Colab
+
+1. Faça o download do arquivo desejado (`.zip` ou `.rar`).
+2. Extraia o conteúdo dentro do diretório `/content/` no Google Colab.
+3. Atualize os caminhos no notebook, se necessário, para apontar para as pastas extraídas.
+4. Execute o notebook para reproduzir os resultados ou realizar novos testes.
