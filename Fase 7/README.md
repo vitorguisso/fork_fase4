@@ -214,12 +214,13 @@ Integração completa de **TODAS as fases anteriores** em um único menu princip
 
 ## Menu Final
 
-1 - Sistema de cálculo de plantio (Fase 1)  
-2 - Sistema de controle de estoque (Fase 2)  
-3 - Sistema de irrigação e sensores (Fases 3 e 4)  
+1 - Abrir sistema de cálculo de plantio (Fase 1)  
+2 - Abrir sistema de controle de estoque (Fase 2)  
+3 - Abrir sistema de irrigação e sensores (Fases 3 e 4)  
 4 - Enviar alerta AWS com base nos sensores (Fase 5)  
-5 - Visão computacional (Fase 6)  
-0 - Sair  
+5 - Abrir menu da visão computacional (Fase 6)  
+0 - Sair
+
 
 Permite navegar por todos os módulos sem mudar de arquivo.
 
