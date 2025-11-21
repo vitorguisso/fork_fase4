@@ -154,7 +154,7 @@ O sistema realiza automaticamente diagnósticos e recomendações baseadas nos s
 
 # 📡 Fase 5 — Envio de Alertas com AWS SNS
 
-O sistema envia e-mails automáticos contendo dados dos sensores e recomendações agrícolas.
+O sistema envia e-mails automáticos contendo dados dos sensores (FASE 3 E 4) e recomendações agrícolas.
 
 <p align="center">
   <img src="assets/menu_fase5.PNG" alt="Menu da Fase 5 - Envio de Alertas AWS" width="600">
