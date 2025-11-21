@@ -101,7 +101,7 @@ Menu completo com:
   https://drive.google.com/drive/folders/1SmJSAe45lyQtrxiUbv5JriFim3BAgRya  
 
 - 🎥 **Vídeo de demonstração da Fase 7 (sistema integrado):**  
-  [Vídeo Demonstração Fase 7](https://www.linkedin.com/company/inova-fusca) https://www.youtube.com/watch?v=2mTAzm6e73U
+  [Vídeo Demonstração Fase 7](https://www.youtube.com/watch?v=2mTAzm6e73U)
 
 ---
 
