@@ -112,8 +112,31 @@ Monitoramento agrícola via Banco Oracle, com sensores simulados e automação d
 - Potássio  
 
 ## Automação
-- Se **umidade < 40% → bomba LIGADA**  
-- Toda leitura é gravada no Banco Oracle FIAP  
+
+O sistema realiza automaticamente diagnósticos e recomendações baseadas nos sensores:
+
+### 🌧️ Umidade do Solo
+- **umidade < 30% → acionar irrigação imediatamente**  
+- **umidade > 80% → recomendar drenagem ou redução da irrigação**  
+- Faixa ideal entre 30% e 80%
+
+### ⚗️ pH do Solo
+- **pH < 5.5 → recomendar calagem (correção com calcário)**  
+- **pH > 7.5 → recomendar medidas para reduzir alcalinidade**
+
+### 🧪 Fósforo
+- **Fósforo ausente → recomendar adubação fosfatada**
+
+### 🧪 Potássio
+- **Potássio ausente → recomendar adubação potássica**
+
+### 🟢 Condição Ideal
+- Se nenhum parâmetro estiver fora da faixa:  
+  **“Todos os parâmetros estão dentro da faixa ideal. Manter monitoramento.”**
+
+### 💾 Registro
+- Todas as leituras são **gravadas automaticamente** no Banco Oracle FIAP.
+- As recomendações geradas abastecem o módulo de **alertas automáticos via AWS SNS**.
 
 ## Sistema completo para:
 - Inserir novos registros  
