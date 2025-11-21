@@ -298,7 +298,7 @@ TOPIC_ARN = "arn:aws:sns:sa-east-1:XXXXXXXXXXXX:farmtech-alertas"
 
 # ▶️ Executar o sistema integrado
 
-python src/fase7_sistema_integrado/dashboard.py
+[➡️ Abrir dashboard.py](src/fase7_sistema_integrado/dashboard.py)
 
 ---
 
