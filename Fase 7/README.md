@@ -1,3 +1,5 @@
+====================== INÍCIO DO BLOCO ======================
+
 # FIAP - Faculdade de Informática e Administração Paulista
 
 <p align="center">
@@ -11,8 +13,8 @@
 # FarmTech Solutions – Sistema Integrado de Monitoramento Agrícola (Fase 7)
 
 ## 👨‍🎓 Integrantes
-- [Vinícius Pereira Santana]()
-- [Vitor Augusto Prado Guisso]()
+- [Vinícius Pereira Santana](https://www.linkedin.com/company/inova-fusca)
+- [Vitor Augusto Prado Guisso](https://www.linkedin.com/company/inova-fusca)
 
 ## 👩‍🏫 Professores
 ### Tutor(a)
@@ -25,113 +27,205 @@
 
 ## 📜 Descrição geral
 
-Esta fase consolida todo o trabalho desenvolvido ao longo do ano pela FarmTech Solutions, integrando:
+Esta fase final reúne todo o trabalho das fases anteriores (1 a 6), consolidando em um **Sistema Integrado de Monitoramento Agrícola**.
 
-- Simulador de cálculo de plantio (Fase 1)  
-- Sistema de controle de estoque com banco relacional Oracle (Fase 2)  
-- Sistema de monitoramento de irrigação e sensores com bomba automática (Fases 3 e 4)  
-- Envio de alertas inteligentes via AWS SNS com base nos dados dos sensores (Fase 5)  
-- Módulo de visão computacional para monitoramento de fazendas (Fase 6)  
+O sistema unifica:
 
-Tudo é acessado por meio de um único menu em linha de comando:
+- 🌱 **Cálculo de plantio** (Fase 1)  
+- 📦 **Controle de estoque via Banco Oracle FIAP** (Fase 2)  
+- 💧 **Sensores de irrigação e bomba automática** (Fases 3 e 4)  
+- 📬 **Alertas inteligentes via AWS SNS** (Fase 5)  
+- 👁️ **Visão computacional com YOLOv8** (Fase 6)  
 
-`Fase 7/src/fase7_sistema_integrado/dashboard.py`
-
-O sistema integrado permite:
-
-- Navegar entre todas as fases do projeto  
-- Conectar ao banco Oracle FIAP  
-- Enviar alertas automáticos para e-mail através da AWS  
-- Visualizar o menu da visão computacional e seus resultados  
+Tudo isso executado em um **único menu final**, totalmente funcional e integrado.
 
 ---
 
-## 🧪 Atividades desenvolvidas por fase
+# 🧪 Atividades desenvolvidas por fase
 
-### **Fase 1 – Cálculo de plantio**
-- Estimativa da população de plantas por hectare  
-- Dados considerados:
-  - Espaçamento entre linhas  
-  - Espaçamento entre plantas  
-  - Área total de cultivo  
-
-### **Fase 2 – Controle de estoque com Oracle**
-- CRUD completo de insumos agrícolas  
-- Uso de `cx_Oracle` para conexão remota  
-- Organização do código com menu próprio  
-
-### **Fases 3 e 4 – Sistema de irrigação e sensores**
-- Sensores simulados: umidade, pH, fósforo e potássio  
-- Armazenamento em tabela Oracle `sistema_irrigacao`  
-- Bomba ligada/desligada com base na umidade (< 40%)  
-- Menus para inserir, atualizar, deletar e listar registros  
-
-### **Fase 5 – AWS SNS**
-- Tópico SNS configurado para alertas automáticos  
-- E-mails enviados conforme leituras dos sensores  
-- Recomendações geradas automaticamente  
-- Integração via `boto3` e variáveis de ambiente no sistema  
-
-### **Fase 6 – Visão computacional**
-- Detecta bovinos e funcionários  
-- Comparação entre:
-  - YOLO adaptado (treinado)  
-  - YOLO pré-treinado (COCO)  
-  - CNN desenvolvida do zero  
-- Resultados apresentados em vídeo e notebook  
-
-### **Fase 7 – Sistema Integrado**
-Menu completo com:
-
-1. Abrir sistema de cálculo de plantio (Fase 1)  
-2. Abrir sistema de controle de estoque (Fase 2)  
-3. Abrir sistema de irrigação e sensores (Fases 3 e 4)  
-4. Enviar alerta AWS com base nos sensores (Fase 5)  
-5. Abrir menu da visão computacional (Fase 6)  
-0. Sair  
+## Fase 1 – Cálculo de plantio
+- Cálculo de população de plantas por hectare  
+- Entrada de espaçamento e área  
+- Simulação do número total de plantas  
 
 ---
 
-## 🔗 Links importantes
-
-- 📓 **Notebook Fase 6:**  
-  https://github.com/vitorguisso/fork_fase4/blob/master/Fase%206/src/VitorGuisso_rm562317_fase6.ipynb  
-
-- 📁 **Google Drive — arquivos da visão computacional:**  
-  https://drive.google.com/drive/folders/1SmJSAe45lyQtrxiUbv5JriFim3BAgRya  
-
-- 🎥 **Vídeo de demonstração da Fase 7 (sistema integrado):**  
-  [Vídeo Demonstração Fase 7](https://www.youtube.com/watch?v=2mTAzm6e73U)
+## Fase 2 – Controle de estoque (Banco Oracle FIAP)
+- CRUD completo  
+- Validações de insumos (prazo, quantidade, consumo diário)  
+- Conexão real via `cx_Oracle`  
+- Persistência dos registros  
 
 ---
 
-## 🧰 Bibliotecas principais utilizadas
+## Fases 3 e 4 – Sistema de irrigação e sensores
 
-- `cx_Oracle` – conexão com Oracle  
-- `boto3` – AWS SNS  
-- `ultralytics` – YOLO (detecção)  
-- `opencv-python` – processamento de imagens  
-- `tensorflow` – CNN (baseline)  
-- `pandas`, `numpy`, `matplotlib` – análise / gráficos  
-- `scikit-learn` – ML (RandomForest, métricas)  
-- `streamlit` – dashboard (Fase 4 App)  
+Sensores simulados:
+- Umidade  
+- pH  
+- Fósforo  
+- Potássio  
+
+Automação:
+- Se **umidade < 40% → bomba LIGADA**  
+- Dados gravados no Banco Oracle  
+- Menu completo: inserir, atualizar, deletar e exibir registros
+
+---
+
+## Fase 5 – AWS SNS (Alertas automáticos)
+- Envio de e-mail com:
+  - Leituras dos sensores
+  - Recomendações inteligentes baseadas na agronomia
+- Uso do `boto3`
+- Segurança via variáveis de ambiente  
+- 100% operacional
+
+---
+
+## Fase 6 – Visão computacional (YOLO + CNN)
+- Dataset com 80 imagens rotuladas  
+- Treinamento YOLOv8 (30 e 60 épocas)  
+- Comparação com YOLO COCO e CNN do zero  
+- Relatórios, inferências e vídeos  
+
+---
+
+## Fase 7 – Sistema Integrado
+
+Menu final:
+
+1 - Abrir sistema de cálculo de plantio (Fase 1)  
+2 - Abrir sistema de controle de estoque (Fase 2)  
+3 - Abrir sistema de irrigação e sensores (Fases 3 e 4)  
+4 - Enviar alerta AWS com base nos sensores (Fase 5)  
+5 - Abrir menu de visão computacional (Fase 6)  
+0 - Sair  
+
+**Arquivo principal:**  
+src/fase7_sistema_integrado/dashboard.py
+
+---
+
+# 🔗 Links importantes
+
+📓 Notebook visão computacional (Fase 6):  
+https://github.com/vitorguisso/fork_fase4/blob/master/Fase%206/src/VitorGuisso_rm562317_fase6.ipynb
+
+📁 Arquivos YOLO & Dataset (Google Drive):  
+https://drive.google.com/drive/folders/1SmJSAe45lyQtrxiUbv5JriFim3BAgRya
+
+🎥 Vídeo final – Fase 7:  
+(inserir link do YouTube aqui)
 
 ---
 
 # 🔧 Como executar o projeto
 
-## **1. Pré-requisitos**
-- Python 3.10 ou superior  
-- Oracle Instant Client 64 bits instalado  
-- Acesso ao Oracle FIAP  
-- Conta AWS com permissão SNS  
-- Git instalado  
+## 1. Clonar o repositório
+
+git clone https://github.com/vitorguisso/fork_fase4.git  
+cd "fork_fase4/Fase 7"
+
+## 2. Criar ambiente virtual
+
+python -m venv .venv  
+.venv\Scripts\activate     # Windows  
+source .venv/bin/activate  # Linux / Mac
+
+## 3. Instalar dependências
+
+pip install cx_Oracle boto3 pandas numpy scikit-learn matplotlib streamlit opencv-python ultralytics
 
 ---
 
-## **2. Clonar o repositório**
+# 🔌 Conexão com o Banco Oracle FIAP
 
-```bash
-git clone https://github.com/vitorguisso/fork_fase4.git
-cd "fork_fase4/Fase 7"
+Exemplo usado no código:
 
+username = "RM562317"  
+password = "100598"  
+dsn = "oracle.fiap.com.br/orcl"
+
+Para outro usuário FIAP acessar:
+
+username = "SEU_USUARIO"   # Ex: RM123456  
+password = "SUA_SENHA"  
+dsn = "oracle.fiap.com.br/orcl"
+
+⚠️ Importante:  
+O sistema está configurado para o RM562317.  
+Para executar, substitua pelas credenciais do seu RM.
+
+---
+
+# ☁️ Configuração da AWS (Alertas por SNS)
+
+Variáveis de ambiente (Windows):
+
+AWS_KEY=SUACHAVE  
+AWS_SECRET=SUASECRET  
+
+Atualizar ARN no arquivo:  
+src/fase5_analise_aws/aws_alertas.py
+
+TOPIC_ARN = "arn:aws:sns:sa-east-1:XXXXXXXXXXXX:farmtech-alertas"
+
+---
+
+# ▶️ Executar o sistema integrado
+
+python src/fase7_sistema_integrado/dashboard.py
+
+---
+
+# 📊 Conclusões e resultados
+
+- Sistema completamente integrado  
+- Todos os módulos funcionando em conjunto  
+- Banco Oracle com dados reais  
+- Alertas AWS com recomendações agronômicas  
+- YOLOv8 treinado demonstrando visão computacional aplicada  
+- Projeto fiel ao PBL e totalmente operacional  
+
+---
+
+# 🔥 Destaques
+
+- Integração IA + IoT + Banco + AWS  
+- Arquitetura modular e escalável  
+- Solução realista para agronegócio  
+
+---
+
+# 📁 Estrutura de pastas
+
+Fase 7/  
+ ├── assets/  
+ ├── document/  
+ ├── scripts/  
+ ├── src/  
+ │   ├── fase1_calculo_plantio/  
+ │   ├── fase2_banco_relacional/  
+ │   ├── fase4_sistema_irrigacao_dashboard/  
+ │   ├── fase5_analise_aws/  
+ │   ├── fase6_visao_computacional/  
+ │   ├── fase7_sistema_integrado/  
+ ├── README.md  
+
+---
+
+# 🗃 Histórico de Lançamentos
+
+1.0.0 – 21/11/2025  
+Entrega final da Fase 7 — Sistema Integrado completo.
+
+---
+
+# 📋 Licença
+
+<a href="https://github.com/agodoi/template">MODELO GIT FIAP</a> — Licença  
+CC Attribution 4.0 International  
+https://creativecommons.org/licenses/by/4.0/
+
+====================== FIM DO BLOCO ======================
