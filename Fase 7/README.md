@@ -309,7 +309,6 @@ TOPIC_ARN = "arn:aws:sns:sa-east-1:XXXXXXXXXXXX:farmtech-alertas"
 - Banco Oracle com dados reais  
 - Alertas AWS com recomendações agronômicas  
 - YOLOv8 treinado demonstrando visão computacional aplicada  
-- Projeto fiel ao PBL e totalmente operacional  
 
 ---
 
