@@ -201,8 +201,9 @@ Integração completa de **TODAS as fases anteriores** em um único menu princip
 
 Permite navegar por todos os módulos sem mudar de arquivo.
 
-**Arquivo principal:**  
-src/fase7_sistema_integrado/dashboard.py
+### 📌 Arquivo principal
+[➡️ Abrir dashboard.py](src/fase7_sistema_integrado/dashboard.py)
+
 
 ---
 
