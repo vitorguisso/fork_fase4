@@ -38,67 +38,167 @@ O sistema unifica:
 Tudo isso executado em um **único menu final**, totalmente funcional e integrado.
 
 ---
-
-# 🧪 Atividades desenvolvidas por fase
-
-## Fase 1 – Cálculo de plantio
-- Cálculo de população de plantas por hectare  
-- Entrada de espaçamento e área  
-- Simulação do número total de plantas  
+# 🧪 Atividades Desenvolvidas por Fase
 
 ---
 
-## Fase 2 – Controle de estoque (Banco Oracle FIAP)
-- CRUD completo  
-- Validações de insumos (prazo, quantidade, consumo diário)  
-- Conexão real via `cx_Oracle`  
-- Persistência dos registros  
+# 🌱 Fase 1 — Sistema de Cálculo de Plantio
+
+Funciona como uma calculadora agrícola completa, permitindo planejar corretamente o cultivo de milho ou soja.
+
+<p align="center">
+  <img src="menu_fase1.PNG" alt="Menu da Fase 1 - Sistema de Cálculo de Plantio" width="600">
+</p>
+
+## Funcionalidades
+
+### Cálculo de:
+- Área total de plantio  
+- Número de fileiras  
+- Plantas por metro  
+- Espaçamento entre sementes  
+- Sementes por fileira  
+- Quantidade total de sementes  
+
+### Cálculo de manejo de insumos:
+- Fertilizantes  
+- Inseticidas  
+
+### Sistema interno de cadastro de insumos:
+- Adicionar  
+- Editar  
+- Excluir  
+- Exibir itens cadastrados  
 
 ---
 
-## Fases 3 e 4 – Sistema de irrigação e sensores
+# 🧮 Fase 2 — Sistema de Controle de Estoque
 
-Sensores simulados:
+Sistema criado para administrar insumos agrícolas com base no consumo diário e no tempo de entrega.
+
+<p align="center">
+  <img src="menu_fase2.PNG" alt="Menu da Fase 2 - Sistema de Controle de Estoque" width="600">
+</p>
+
+## Funcionalidades
+- Cadastro de insumos e fornecedor  
+- Cálculo automático de:  
+  - Estoque mínimo  
+  - Data ideal para nova compra  
+- Validação dos dados inseridos  
+
+### Controle completo:
+- Adicionar  
+- Editar  
+- Excluir  
+- Listar insumos  
+
+⚠️ Nesta fase ainda **NÃO há integração com Oracle** — o sistema funciona apenas localmente.
+
+---
+
+# 🚜 Fases 3 e 4 — Sistema de Sensores + Banco Oracle
+
+Monitoramento agrícola via Banco Oracle, com sensores simulados e automação da irrigação.
+
+<p align="center">
+  <img src="menu_fase3e4.PNG" alt="Menu das Fases 3 e 4 - Sistema de Irrigação e Sensores" width="600">
+</p>
+
+## Sensores monitorados
 - Umidade  
 - pH  
 - Fósforo  
 - Potássio  
 
-Automação:
+## Automação
 - Se **umidade < 40% → bomba LIGADA**  
-- Dados gravados no Banco Oracle  
-- Menu completo: inserir, atualizar, deletar e exibir registros
+- Toda leitura é gravada no Banco Oracle FIAP  
+
+## Sistema completo para:
+- Inserir novos registros  
+- Atualizar registros  
+- Deletar registros  
+- Visualizar histórico  
+
+### Exemplo de alerta recomendado
+
+<p align="center">
+  <img src="Email_AWS_fase3e4.PNG" alt="Exemplo de e-mail de alerta gerado a partir dos sensores (Fases 3 e 4)" width="600">
+</p>
 
 ---
 
-## Fase 5 – AWS SNS (Alertas automáticos)
-- Envio de e-mail com:
-  - Leituras dos sensores
-  - Recomendações inteligentes baseadas na agronomia
-- Uso do `boto3`
-- Segurança via variáveis de ambiente  
-- 100% operacional
+# 📡 Fase 5 — Envio de Alertas com AWS SNS
+
+O sistema envia e-mails automáticos contendo dados dos sensores e recomendações agrícolas.
+
+<p align="center">
+  <img src="menu_fase5.PNG" alt="Menu da Fase 5 - Envio de Alertas AWS" width="600">
+</p>
+
+## Conteúdo dos alertas
+- Umidade  
+- pH  
+- Fósforo  
+- Potássio  
+
+### Recomendações incluídas:
+- Acionar irrigação  
+- Fazer calagem  
+- Realizar adubação fosfatada  
+- Realizar adubação potássica  
+
+## Tecnologias
+- boto3 (AWS SNS)  
+- Variáveis de ambiente para segurança  
+- Funcionamento automático (com sensores – Fase 4)  
+- Funcionamento manual (menu da Fase 5)  
+
+### Exemplo real de e-mail
+
+<p align="center">
+  <img src="Email_AWS_fase5.PNG" alt="Exemplo real de e-mail de alerta AWS SNS (Fase 5)" width="600">
+</p>
 
 ---
 
-## Fase 6 – Visão computacional (YOLO + CNN)
-- Dataset com 80 imagens rotuladas  
+# 👁️ Fase 6 — Visão Computacional (YOLO + CNN)
+
+Treinamento de modelos de IA para detectar bovinos e funcionários nas imagens da fazenda.
+
+<p align="center">
+  <img src="menu_fase6.PNG" alt="Menu da Fase 6 - Visão Computacional" width="600">
+</p>
+
+## Conteúdo da fase
+- Dataset com **80 imagens rotuladas**  
 - Treinamento YOLOv8 (30 e 60 épocas)  
 - Comparação com YOLO COCO e CNN do zero  
-- Relatórios, inferências e vídeos  
+- Relatórios, gráficos e métricas  
+- Inferências e análises técnicas  
+- Possibilidade de testar novas imagens via Colab  
 
 ---
 
-## Fase 7 – Sistema Integrado
+# 🧩 Fase 7 — Sistema Integrado (Dashboard Final)
 
-Menu final:
+Integração completa de **TODAS as fases anteriores** em um único menu principal.
 
-1 - Abrir sistema de cálculo de plantio (Fase 1)  
-2 - Abrir sistema de controle de estoque (Fase 2)  
-3 - Abrir sistema de irrigação e sensores (Fases 3 e 4)  
+<p align="center">
+  <img src="menu_fase7.PNG" alt="Menu da Fase 7 - Sistema Integrado" width="600">
+</p>
+
+## Menu Final
+
+1 - Sistema de cálculo de plantio (Fase 1)  
+2 - Sistema de controle de estoque (Fase 2)  
+3 - Sistema de irrigação e sensores (Fases 3 e 4)  
 4 - Enviar alerta AWS com base nos sensores (Fase 5)  
-5 - Abrir menu de visão computacional (Fase 6)  
+5 - Visão computacional (Fase 6)  
 0 - Sair  
+
+Permite navegar por todos os módulos sem mudar de arquivo.
 
 **Arquivo principal:**  
 src/fase7_sistema_integrado/dashboard.py
