@@ -38,7 +38,6 @@ O sistema unifica:
 Tudo isso executado em um **único menu final**, totalmente funcional e integrado.
 
 ---
-====================== INÍCIO DO BLOCO ======================
 
 # 🧪 Atividades Desenvolvidas por Fase
 
@@ -201,9 +200,6 @@ Integração completa de **TODAS as fases anteriores** em um único menu princip
 0 - Sair  
 
 Permite navegar por todos os módulos sem mudar de arquivo.
-
-====================== FIM DO BLOCO ======================
-
 
 **Arquivo principal:**  
 src/fase7_sistema_integrado/dashboard.py
