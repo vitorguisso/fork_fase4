@@ -38,6 +38,8 @@ O sistema unifica:
 Tudo isso executado em um **único menu final**, totalmente funcional e integrado.
 
 ---
+====================== INÍCIO DO BLOCO ======================
+
 # 🧪 Atividades Desenvolvidas por Fase
 
 ---
@@ -47,7 +49,7 @@ Tudo isso executado em um **único menu final**, totalmente funcional e integrad
 Funciona como uma calculadora agrícola completa, permitindo planejar corretamente o cultivo de milho ou soja.
 
 <p align="center">
-  <img src="menu_fase1.PNG" alt="Menu da Fase 1 - Sistema de Cálculo de Plantio" width="600">
+  <img src="assets/menu_fase1.PNG" alt="Menu da Fase 1 - Sistema de Cálculo de Plantio" width="600">
 </p>
 
 ## Funcionalidades
@@ -77,7 +79,7 @@ Funciona como uma calculadora agrícola completa, permitindo planejar corretamen
 Sistema criado para administrar insumos agrícolas com base no consumo diário e no tempo de entrega.
 
 <p align="center">
-  <img src="menu_fase2.PNG" alt="Menu da Fase 2 - Sistema de Controle de Estoque" width="600">
+  <img src="assets/menu_fase2.PNG" alt="Menu da Fase 2 - Sistema de Controle de Estoque" width="600">
 </p>
 
 ## Funcionalidades
@@ -102,7 +104,7 @@ Sistema criado para administrar insumos agrícolas com base no consumo diário e
 Monitoramento agrícola via Banco Oracle, com sensores simulados e automação da irrigação.
 
 <p align="center">
-  <img src="menu_fase3e4.PNG" alt="Menu das Fases 3 e 4 - Sistema de Irrigação e Sensores" width="600">
+  <img src="assets/menu_fase3e4.PNG" alt="Menu das Fases 3 e 4 - Sistema de Irrigação e Sensores" width="600">
 </p>
 
 ## Sensores monitorados
@@ -124,7 +126,7 @@ Monitoramento agrícola via Banco Oracle, com sensores simulados e automação d
 ### Exemplo de alerta recomendado
 
 <p align="center">
-  <img src="Email_AWS_fase3e4.PNG" alt="Exemplo de e-mail de alerta gerado a partir dos sensores (Fases 3 e 4)" width="600">
+  <img src="assets/Email_AWS_fase3e4.PNG" alt="Exemplo de e-mail de alerta gerado a partir dos sensores (Fases 3 e 4)" width="600">
 </p>
 
 ---
@@ -134,7 +136,7 @@ Monitoramento agrícola via Banco Oracle, com sensores simulados e automação d
 O sistema envia e-mails automáticos contendo dados dos sensores e recomendações agrícolas.
 
 <p align="center">
-  <img src="menu_fase5.PNG" alt="Menu da Fase 5 - Envio de Alertas AWS" width="600">
+  <img src="assets/menu_fase5.PNG" alt="Menu da Fase 5 - Envio de Alertas AWS" width="600">
 </p>
 
 ## Conteúdo dos alertas
@@ -158,7 +160,7 @@ O sistema envia e-mails automáticos contendo dados dos sensores e recomendaçõ
 ### Exemplo real de e-mail
 
 <p align="center">
-  <img src="Email_AWS_fase5.PNG" alt="Exemplo real de e-mail de alerta AWS SNS (Fase 5)" width="600">
+  <img src="assets/Email_AWS_fase5.PNG" alt="Exemplo real de e-mail de alerta AWS SNS (Fase 5)" width="600">
 </p>
 
 ---
@@ -168,7 +170,7 @@ O sistema envia e-mails automáticos contendo dados dos sensores e recomendaçõ
 Treinamento de modelos de IA para detectar bovinos e funcionários nas imagens da fazenda.
 
 <p align="center">
-  <img src="menu_fase6.PNG" alt="Menu da Fase 6 - Visão Computacional" width="600">
+  <img src="assets/menu_fase6.PNG" alt="Menu da Fase 6 - Visão Computacional" width="600">
 </p>
 
 ## Conteúdo da fase
@@ -186,7 +188,7 @@ Treinamento de modelos de IA para detectar bovinos e funcionários nas imagens d
 Integração completa de **TODAS as fases anteriores** em um único menu principal.
 
 <p align="center">
-  <img src="menu_fase7.PNG" alt="Menu da Fase 7 - Sistema Integrado" width="600">
+  <img src="assets/menu_fase7.PNG" alt="Menu da Fase 7 - Sistema Integrado" width="600">
 </p>
 
 ## Menu Final
@@ -199,6 +201,9 @@ Integração completa de **TODAS as fases anteriores** em um único menu princip
 0 - Sair  
 
 Permite navegar por todos os módulos sem mudar de arquivo.
+
+====================== FIM DO BLOCO ======================
+
 
 **Arquivo principal:**  
 src/fase7_sistema_integrado/dashboard.py
