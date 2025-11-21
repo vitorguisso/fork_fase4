@@ -94,7 +94,6 @@ Sistema criado para administrar insumos agrícolas com base no consumo diário e
 - Excluir  
 - Listar insumos  
 
-⚠️ Nesta fase ainda **NÃO há integração com Oracle** — o sistema funciona apenas localmente.
 
 ---
 
