@@ -11,8 +11,8 @@
 # FarmTech Solutions – Sistema Integrado de Monitoramento Agrícola (Fase 7)
 
 ## 👨‍🎓 Integrantes
-- [Vinícius Pereira Santana](https://www.linkedin.com/company/inova-fusca)
-- [Vitor Augusto Prado Guisso](https://www.linkedin.com/company/inova-fusca)
+- [Vinícius Pereira Santana]()
+- [Vitor Augusto Prado Guisso]()
 
 ## 👩‍🏫 Professores
 ### Tutor(a)
@@ -30,8 +30,8 @@ Esta fase final reúne todo o trabalho das fases anteriores (1 a 6), consolidand
 O sistema unifica:
 
 - 🌱 **Cálculo de plantio** (Fase 1)  
-- 📦 **Controle de estoque via Banco Oracle FIAP** (Fase 2)  
-- 💧 **Sensores de irrigação e bomba automática** (Fases 3 e 4)  
+- 📦 **Controle de estoque (Lead Time)** (Fase 2)  
+- 💧 **Sensores e controle de irrigação** (Fases 3 e 4)  
 - 📬 **Alertas inteligentes via AWS SNS** (Fase 5)  
 - 👁️ **Visão computacional com YOLOv8** (Fase 6)  
 
@@ -114,7 +114,7 @@ https://github.com/vitorguisso/fork_fase4/blob/master/Fase%206/src/VitorGuisso_r
 https://drive.google.com/drive/folders/1SmJSAe45lyQtrxiUbv5JriFim3BAgRya
 
 🎥 Vídeo final – Fase 7:  
-(inserir link do YouTube aqui)
+[Vídeo Demonstração Fase 7](https://www.youtube.com/watch?v=2mTAzm6e73U)
 
 ---
 
