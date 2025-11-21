@@ -11,8 +11,8 @@
 # FarmTech Solutions – Sistema Integrado de Monitoramento Agrícola (Fase 7)
 
 ## 👨‍🎓 Integrantes
-- [Vinícius Pereira Santana](https://www.linkedin.com/company/inova-fusca)
-- [Vitor Augusto Prado Guisso](https://www.linkedin.com/company/inova-fusca)
+- [Vinícius Pereira Santana]()
+- [Vitor Augusto Prado Guisso]()
 
 ## 👩‍🏫 Professores
 ### Tutor(a)
@@ -101,7 +101,7 @@ Menu completo com:
   https://drive.google.com/drive/folders/1SmJSAe45lyQtrxiUbv5JriFim3BAgRya  
 
 - 🎥 **Vídeo de demonstração da Fase 7 (sistema integrado):**  
-  *(Adicionar o link do YouTube quando publicado)*  
+  [Vídeo Demonstração Fase 7](https://www.linkedin.com/company/inova-fusca) https://www.youtube.com/watch?v=2mTAzm6e73U
 
 ---
 
