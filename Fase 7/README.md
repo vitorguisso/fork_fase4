@@ -322,18 +322,21 @@ TOPIC_ARN = "arn:aws:sns:sa-east-1:XXXXXXXXXXXX:farmtech-alertas"
 
 # 📁 Estrutura de pastas
 
-Fase 7/  
- ├── assets/  
- ├── document/  
- ├── scripts/  
- ├── src/  
- │   ├── fase1_calculo_plantio/  
- │   ├── fase2_banco_relacional/  
- │   ├── fase4_sistema_irrigacao_dashboard/  
- │   ├── fase5_analise_aws/  
- │   ├── fase6_visao_computacional/  
- │   ├── fase7_sistema_integrado/  
- ├── README.md  
+
+| Pasta/Arquivo | Descrição |
+|--------------|-----------|
+| **assets/** | Imagens e gráficos utilizados no projeto (menus, prints, logo FIAP, alertas AWS). |
+| **document/** | Documentos técnicos da fase 7 (PDFs, relatórios, exportações). |
+| **scripts/** | Scripts auxiliares usados para automações, deploy e outras funções de suporte ao projeto. |
+| **src/** | Todo o código principal desenvolvido nas 7 fases do projeto. Cada fase possui sua própria pasta. |
+| **src/fase1_calculo_plantio/** | Código referente ao Sistema de Cálculo de Plantio (Fase 1). |
+| **src/fase2_banco_relacional/** | CRUD completo do Controle de Estoque (Fase 2). |
+| **src/fase4_sistema_irrigacao_dashboard/** | Sistema de irrigação, sensores e integração parcial com Oracle (Fases 3 e 4). |
+| **src/fase5_analise_aws/** | Script AWS SNS para envio dos alertas automáticos (Fase 5). |
+| **src/fase6_visao_computacional/** | Notebooks e scripts relacionados à visão computacional com YOLO e CNN (Fase 6). |
+| **src/fase7_sistema_integrado/** | Dashboard final do sistema unificado (Fase 7). |
+| **README.md** | Documentação principal do projeto (este arquivo). |
+
 
 ---
 
