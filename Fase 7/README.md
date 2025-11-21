@@ -1,5 +1,3 @@
-====================== INÍCIO DO BLOCO ======================
-
 # FIAP - Faculdade de Informática e Administração Paulista
 
 <p align="center">
@@ -228,4 +226,3 @@ Entrega final da Fase 7 — Sistema Integrado completo.
 CC Attribution 4.0 International  
 https://creativecommons.org/licenses/by/4.0/
 
-====================== FIM DO BLOCO ======================
